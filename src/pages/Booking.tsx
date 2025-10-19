@@ -229,14 +229,6 @@ const Booking = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-border shadow-md">
-                <CardHeader>
-                  <CardTitle className="text-lg">Cancellation Policy</CardTitle>
-                </CardHeader>
-                <CardContent className="text-sm text-muted-foreground">
-                  <p>Please provide at least 24 hours notice for cancellations or rescheduling. Late cancellations may incur a fee.</p>
-                </CardContent>
-              </Card>
 
               <Card className="border-border shadow-md bg-primary/5">
                 <CardHeader>
@@ -256,6 +248,87 @@ const Booking = () => {
               </Card>
             </div>
           </div>
+
+          {/* Booking Policy Section */}
+          <section className="py-16 bg-secondary mt-12 rounded-2xl">
+            <div className="max-w-3xl mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl font-garamond font-bold text-foreground mb-8 text-center">
+                Booking Policy
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="bg-background border-none shadow-sm">
+                  <CardContent className="p-6">
+                    <Calendar className="w-8 h-8 text-primary mb-4" />
+                    <h3 className="text-xl font-garamond font-semibold mb-3">Scheduling</h3>
+                    <p className="text-foreground leading-relaxed">
+                      Book at least 24 hours in advance. Same-day appointments may be available upon request.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-background border-none shadow-sm">
+                  <CardContent className="p-6">
+                    <Clock className="w-8 h-8 text-primary mb-4" />
+                    <h3 className="text-xl font-garamond font-semibold mb-3">Cancellations</h3>
+                    <p className="text-foreground leading-relaxed">
+                      Please provide 24-hour notice for cancellations to avoid a 50% cancellation fee.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+
+          {/* Service Area Section */}
+          <section className="py-16 bg-background">
+            <div className="max-w-3xl mx-auto px-4 text-center">
+              <MapPin className="w-12 h-12 text-primary mx-auto mb-6" />
+              <h2 className="text-3xl md:text-4xl font-garamond font-bold text-foreground mb-6">
+                Service Area
+              </h2>
+              <p className="text-lg text-foreground leading-relaxed mb-4">
+                I proudly serve the greater metropolitan area and surrounding communities within a 30-mile radius. 
+                Not sure if you're in the service area? Contact me and I'll let you know!
+              </p>
+              <p className="text-muted-foreground italic">
+                Travel fees may apply for locations beyond 20 miles from downtown.
+              </p>
+            </div>
+          </section>
+
+          {/* Service Area Map Section */}
+          <section className="py-16 bg-card">
+            <div className="max-w-4xl mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl font-garamond font-bold text-foreground mb-8 text-center">
+                Service Area Map
+              </h2>
+              <div className="bg-background rounded-2xl overflow-hidden shadow-lg">
+                <img 
+                  src={new URL('../assets/service-area-map.jpg', import.meta.url).href}
+                  alt="Service area map showing 30-mile radius coverage"
+                  className="w-full h-auto"
+                />
+                <div className="p-8 text-center">
+                  <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
+                  <p className="text-lg text-foreground leading-relaxed">
+                    I serve the greater metropolitan area and surrounding communities. Contact me to confirm I serve your location!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Quick Response Guarantee Section */}
+          <section className="py-16 bg-background">
+            <div className="max-w-2xl mx-auto px-4 text-center">
+              <Clock className="w-12 h-12 text-primary mx-auto mb-6" />
+              <h2 className="text-3xl md:text-4xl font-garamond font-bold text-foreground mb-6">
+                Quick Response Guarantee
+              </h2>
+              <p className="text-lg text-foreground leading-relaxed">
+                I respond to all inquiries within 24 hours, usually much faster. Your wellness is my priority!
+              </p>
+            </div>
+          </section>
         </div>
       </main>
       <Footer />
