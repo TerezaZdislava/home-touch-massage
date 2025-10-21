@@ -40,9 +40,24 @@ const Booking = () => {
       return;
     }
 
-    // In a real application, this would send the data to a backend
-    console.log("Booking submitted:", formData);
-    toast.success("Booking request received! I'll confirm via email within 24 hours.");
+    // Create email body with booking details
+    const emailSubject = encodeURIComponent(`Booking Request - ${formData.service}`);
+    const emailBody = encodeURIComponent(
+      `New Booking Request\n\n` +
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Phone: ${formData.phone}\n` +
+      `Service: ${formData.service}\n` +
+      `Date: ${formData.date}\n` +
+      `Time: ${formData.time}\n` +
+      `Address: ${formData.address}\n` +
+      `Notes: ${formData.notes || "None"}\n`
+    );
+
+    // Open email client with pre-filled booking details
+    window.location.href = `mailto:terezka.6@seznam.cz?subject=${emailSubject}&body=${emailBody}`;
+    
+    toast.success("Opening your email client with booking details!");
     
     // Reset form
     setFormData({
