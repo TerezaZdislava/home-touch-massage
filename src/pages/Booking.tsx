@@ -7,9 +7,18 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import { Calendar, Clock, MapPin, User, Mail, Phone } from "lucide-react";
+
+// TypeScript declaration for Google reCAPTCHA
+declare global {
+  interface Window {
+    grecaptcha?: {
+      execute: (siteKey: string, options: { action: string }) => Promise<string>;
+    };
+  }
+}
 
 const Booking = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +30,34 @@ const Booking = () => {
     time: "",
     address: "",
     notes: "",
+    honeypot: "", // Honeypot field for spam protection
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // ============================================================
+  // CONFIGURATION: Replace with your Google reCAPTCHA v3 site key
+  // Get your site key from: https://www.google.com/recaptcha/admin
+  // Choose reCAPTCHA v3 for invisible protection
+  // ============================================================
+  const RECAPTCHA_SITE_KEY = "YOUR_RECAPTCHA_SITE_KEY_HERE";
+
+  // Load reCAPTCHA script when component mounts
+  useEffect(() => {
+    // Only load if site key is configured
+    if (RECAPTCHA_SITE_KEY !== "YOUR_RECAPTCHA_SITE_KEY_HERE") {
+      const script = document.createElement("script");
+      script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+
+      return () => {
+        // Cleanup script on unmount
+        document.head.removeChild(script);
+      };
+    }
+  }, []);
 
   const services = [
     "Sports Massage - $80 (60 min)",
@@ -32,45 +68,94 @@ const Booking = () => {
     "Aroma Relax Massage - $80 (60 min)",
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Check honeypot field - if filled, it's a bot
+    if (formData.honeypot) {
+      toast.error("Spam detected. Please try again.");
+      return;
+    }
+
     // Validate required fields
     if (!formData.name || !formData.email || !formData.phone || !formData.service || !formData.date || !formData.time || !formData.address) {
       toast.error("Please fill in all required fields");
       return;
     }
 
-    // Create email body with booking details
-    const emailSubject = encodeURIComponent(`Booking Request - ${formData.service}`);
-    const emailBody = encodeURIComponent(
-      `New Booking Request\n\n` +
-      `Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Phone: ${formData.phone}\n` +
-      `Service: ${formData.service}\n` +
-      `Date: ${formData.date}\n` +
-      `Time: ${formData.time}\n` +
-      `Address: ${formData.address}\n` +
-      `Notes: ${formData.notes || "None"}\n`
-    );
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast.error("Please enter a valid email address");
+      return;
+    }
 
-    // Open email client with pre-filled booking details
-    window.location.href = `mailto:terezka.6@seznam.cz?subject=${emailSubject}&body=${emailBody}`;
-    
-    toast.success("Opening your email client with booking details!");
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      service: "",
-      date: "",
-      time: "",
-      address: "",
-      notes: "",
-    });
+    setIsSubmitting(true);
+
+    try {
+      // ============================================================
+      // CONFIGURATION: Replace with your Web3Forms access key
+      // Get your free access key from: https://web3forms.com
+      // ============================================================
+      const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY_HERE";
+
+      // Get reCAPTCHA token (if configured)
+      let recaptchaToken = "";
+      if (window.grecaptcha && RECAPTCHA_SITE_KEY !== "YOUR_RECAPTCHA_SITE_KEY_HERE") {
+        recaptchaToken = await window.grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'submit' });
+      }
+
+      // Prepare form data for Web3Forms
+      const submitData = {
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: `Booking Request - ${formData.service}`,
+        from_name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+        date: formData.date,
+        time: formData.time,
+        address: formData.address,
+        notes: formData.notes || "None",
+        "g-recaptcha-response": recaptchaToken, // reCAPTCHA token
+      };
+
+      // Submit to Web3Forms API
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify(submitData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast.success("Thank you! Your booking request has been sent successfully. We'll confirm within 24 hours.");
+        
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          service: "",
+          date: "",
+          time: "",
+          address: "",
+          notes: "",
+          honeypot: "",
+        });
+      } else {
+        throw new Error(result.message || "Failed to send booking request");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast.error("Failed to send booking request. Please try again or contact us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -220,8 +305,25 @@ const Booking = () => {
                     />
                   </div>
 
-                  <Button type="submit" variant="hero" size="lg" className="w-full">
-                    Submit Booking Request
+                  {/* Honeypot field - hidden from users, only bots will fill this */}
+                  <input
+                    type="text"
+                    name="honeypot"
+                    value={formData.honeypot}
+                    onChange={(e) => setFormData({ ...formData, honeypot: e.target.value })}
+                    style={{ display: 'none' }}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+
+                  <Button 
+                    type="submit" 
+                    variant="hero" 
+                    size="lg" 
+                    className="w-full"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Sending..." : "Submit Booking Request"}
                   </Button>
 
                   <p className="text-sm text-muted-foreground text-center">
