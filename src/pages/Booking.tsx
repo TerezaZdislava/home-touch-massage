@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ServiceAreaMap from "@/components/ServiceAreaMap";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -316,19 +317,7 @@ const Booking = () => {
               <h2 className="text-3xl md:text-4xl font-garamond font-bold text-foreground mb-8 text-center">
                 Service Area Map
               </h2>
-              <div className="bg-background rounded-2xl overflow-hidden shadow-lg">
-                <img 
-                  src={new URL('../assets/service-area-map.jpg', import.meta.url).href}
-                  alt="Service area map showing 30-mile radius coverage"
-                  className="w-full h-auto"
-                />
-                <div className="p-8 text-center">
-                  <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-                  <p className="text-lg text-foreground leading-relaxed">
-                    I serve the greater metropolitan area and surrounding communities. Contact me to confirm I serve your location!
-                  </p>
-                </div>
-              </div>
+              <ServiceAreaMap />
             </div>
           </section>
 
