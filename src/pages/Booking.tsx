@@ -97,7 +97,7 @@ const Booking = () => {
       // CONFIGURATION: Replace with your Web3Forms access key
       // Get your free access key from: https://web3forms.com
       // ============================================================
-      const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY_HERE";
+      const WEB3FORMS_ACCESS_KEY = "ad3f057d-f739-4286-8775-08238380f147";
 
       // Get reCAPTCHA token (if configured)
       let recaptchaToken = "";
