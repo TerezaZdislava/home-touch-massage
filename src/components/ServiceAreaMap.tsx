@@ -2,9 +2,9 @@ import { MapPin } from "lucide-react";
 
 // Using OpenStreetMap iframe embed as a free alternative
 const ServiceAreaMap = () => {
-  // Center coordinates for the service area (example: San Francisco)
-  const centerLat = 37.7749;
-  const centerLng = -122.4194;
+  // Center coordinates for Rotterdam city center, Netherlands
+  const centerLat = 51.9225;
+  const centerLng = 4.47917;
   
   // Create a static Google Maps embed URL as a free alternative
   const mapUrl = `https://www.openstreetmap.org/export/embed.html?bbox=${centerLng-0.5},${centerLat-0.5},${centerLng+0.5},${centerLat+0.5}&layer=mapnik&marker=${centerLat},${centerLng}`;
@@ -34,10 +34,10 @@ const ServiceAreaMap = () => {
       <div className="p-8 text-center">
         <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
         <p className="text-lg text-foreground leading-relaxed mb-4">
-          I serve the greater metropolitan area and surrounding communities within a 30-mile radius.
+          I serve Rotterdam city center and surrounding neighborhoods within a 30 km radius.
         </p>
         <p className="text-sm text-muted-foreground">
-          Contact me to confirm I serve your location!
+          Neem contact op om te bevestigen dat ik uw locatie bedien!
         </p>
       </div>
     </div>

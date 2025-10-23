@@ -1,34 +1,38 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap, Gift, Heart, Clock } from "lucide-react";
+import { GraduationCap, Gift, Heart, Users } from "lucide-react";
 
 const discounts = [
-  {
-    icon: GraduationCap,
-    title: "Student Discount",
-    discount: "10% OFF",
-    description: "Valid student ID required",
-    color: "text-blue-600",
-  },
   {
     icon: Gift,
     title: "Loyalty Reward",
     discount: "50% OFF",
     description: "Every 5th massage",
+    details: "Because consistency deserves gratitude",
     color: "text-accent",
   },
   {
-    icon: Heart,
-    title: "Couples Deal",
-    discount: "50% OFF",
-    description: "Second person discount",
-    color: "text-pink-600",
+    icon: Users,
+    title: "Duo/Group Discount",
+    discount: "€10 OFF",
+    description: "Each person saves €10",
+    details: "Bring a friend",
+    color: "text-primary",
   },
   {
-    icon: Clock,
-    title: "Extended Session",
-    discount: "15% OFF",
-    description: "90-minute massages",
+    icon: Heart,
+    title: "Regular Packages",
+    discount: "SAVE €35-45",
+    description: "5 × 60 min = €265 | 5 × 90 min = €355",
+    details: "Best value for regular care",
+    color: "text-accent",
+  },
+  {
+    icon: GraduationCap,
+    title: "Student Deal",
+    discount: "€5 OFF",
+    description: "Each session + 5 × 60 min = €270",
+    details: "Show your student ID - shareable offer",
     color: "text-primary",
   },
 ];
@@ -60,7 +64,8 @@ const Discounts = () => {
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">{discount.title}</h3>
                   <div className="text-3xl font-bold text-primary mb-2">{discount.discount}</div>
-                  <p className="text-sm text-muted-foreground">{discount.description}</p>
+                  <p className="text-sm text-muted-foreground mb-1">{discount.description}</p>
+                  <p className="text-xs italic text-muted-foreground">{discount.details}</p>
                 </CardContent>
               </Card>
             );

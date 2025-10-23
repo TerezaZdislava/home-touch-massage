@@ -8,46 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Terracotta Zen Palette - Warm, Natural, Human-Centered */
-    --background: 30 43% 95%; /* Ivory White */
-    --foreground: 14 27% 29%; /* Chestnut Brown */
+    /* Warm Earth Palette - Professional, Natural, Calming */
+    --background: 36 50% 97%; /* Cream White #FFF8F1 */
+    --foreground: 16 40% 22%; /* Deep Brown #4E342E */
 
-    /* Card styling - Peachy Sand */
-    --card: 20 56% 87%;
-    --card-foreground: 14 27% 29%;
+    /* Card styling - Sandy Taupe */
+    --card: 20 20% 84%; /* Sandy Taupe #D7CCC8 */
+    --card-foreground: 16 40% 22%;
 
-    --popover: 20 56% 87%;
-    --popover-foreground: 14 27% 29%;
+    --popover: 20 20% 84%;
+    --popover-foreground: 16 40% 22%;
 
-    /* Primary - Terracotta */
-    --primary: 14 71% 64%;
-    --primary-foreground: 30 43% 95%;
+    /* Primary - Deep Brown */
+    --primary: 16 40% 22%; /* Deep Brown #4E342E */
+    --primary-foreground: 36 50% 97%;
 
-    /* Secondary - Peachy Sand */
-    --secondary: 20 56% 87%;
-    --secondary-foreground: 14 27% 29%;
+    /* Secondary - Warm Beige */
+    --secondary: 30 30% 95%; /* Warm Beige #F5F0EC */
+    --secondary-foreground: 16 40% 22%;
 
     /* Muted tones */
-    --muted: 20 56% 87%;
-    --muted-foreground: 14 27% 45%;
+    --muted: 30 30% 95%;
+    --muted-foreground: 16 40% 42%;
 
-    /* Accent - Soft Bronze */
-    --accent: 14 53% 47%;
-    --accent-foreground: 30 43% 95%;
+    /* Accent - Clay Orange */
+    --accent: 25 70% 47%; /* Clay Orange #D2691E */
+    --accent-foreground: 36 50% 97%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 30 43% 95%;
+    --destructive-foreground: 36 50% 97%;
 
-    --border: 20 30% 85%;
-    --input: 20 30% 85%;
-    --ring: 14 71% 64%;
+    --border: 20 20% 88%;
+    --input: 20 20% 88%;
+    --ring: 25 70% 47%;
 
     --radius: 1rem;
     
     /* Custom design tokens - Warm, Minimalist, Calming */
-    --hero-gradient: linear-gradient(135deg, hsl(14 71% 64%) 0%, hsl(14 53% 47%) 100%);
-    --soft-shadow: 0 8px 30px -6px hsl(14 71% 64% / 0.2);
-    --card-shadow: 0 4px 20px -4px hsl(14 27% 29% / 0.08);
+    --hero-gradient: linear-gradient(135deg, hsl(16 40% 22%) 0%, hsl(25 70% 47%) 100%);
+    --soft-shadow: 0 8px 30px -6px hsl(25 70% 47% / 0.15);
+    --card-shadow: 0 4px 20px -4px hsl(16 40% 22% / 0.08);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -68,33 +68,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 14 27% 15%; /* Dark Chestnut base */
-    --foreground: 30 43% 95%; /* Ivory White */
+    --background: 16 40% 15%; /* Dark Deep Brown base */
+    --foreground: 36 50% 97%; /* Cream White */
 
-    --card: 14 27% 22%;
-    --card-foreground: 30 43% 95%;
+    --card: 16 40% 20%;
+    --card-foreground: 36 50% 97%;
 
-    --popover: 14 27% 22%;
-    --popover-foreground: 30 43% 95%;
+    --popover: 16 40% 20%;
+    --popover-foreground: 36 50% 97%;
 
-    --primary: 14 71% 64%; /* Terracotta */
-    --primary-foreground: 14 27% 15%;
+    --primary: 25 70% 47%; /* Clay Orange */
+    --primary-foreground: 16 40% 15%;
 
-    --secondary: 20 40% 30%;
-    --secondary-foreground: 30 43% 95%;
+    --secondary: 20 25% 28%;
+    --secondary-foreground: 36 50% 97%;
 
-    --muted: 20 30% 25%;
-    --muted-foreground: 30 43% 75%;
+    --muted: 20 20% 25%;
+    --muted-foreground: 36 50% 75%;
 
-    --accent: 14 53% 47%; /* Soft Bronze */
-    --accent-foreground: 30 43% 95%;
+    --accent: 25 70% 47%; /* Clay Orange */
+    --accent-foreground: 36 50% 97%;
 
     --destructive: 0 65% 50%;
-    --destructive-foreground: 30 43% 95%;
+    --destructive-foreground: 36 50% 97%;
 
     --border: 20 20% 30%;
     --input: 20 20% 30%;
-    --ring: 14 71% 64%;
+    --ring: 25 70% 47%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

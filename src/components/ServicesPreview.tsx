@@ -5,6 +5,9 @@ import { Activity, Wind, Sparkles, Users, Leaf, Clock } from "lucide-react";
 import sportsImage from "@/assets/sports-massage.jpg";
 import antiStressImage from "@/assets/antistress-massage.jpg";
 import couplesImage from "@/assets/couples-massage.jpg";
+import swedishImage from "@/assets/swedish-massage.jpg";
+import deepTissueImage from "@/assets/deep-tissue-massage.jpg";
+import aromaImage from "@/assets/aroma-massage.jpg";
 
 const services = [
   {

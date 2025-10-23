@@ -123,13 +123,13 @@ const Contact = () => {
                   <CardTitle className="text-lg">Contact Information</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <a href="tel:+1234567890" className="flex items-start gap-3 hover:text-primary transition-colors group">
+                  <a href="tel:+31642940546" className="flex items-start gap-3 hover:text-primary transition-colors group">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
                       <div className="text-sm text-muted-foreground">Phone</div>
-                      <div className="font-medium">+1 (234) 567-890</div>
+                      <div className="font-medium">+31 6 4294 0546</div>
                     </div>
                   </a>
 
@@ -149,7 +149,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <div className="text-sm text-muted-foreground">Service Area</div>
-                      <div className="font-medium">Greater metro area</div>
+                      <div className="font-medium">Rotterdam & omgeving</div>
                     </div>
                   </div>
                 </CardContent>

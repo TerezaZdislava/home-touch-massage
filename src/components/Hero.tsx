@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Sparkles, Shield, Heart } from "lucide-react";
-import heroImage from "@/assets/hero-massage.jpg";
+import heroImage from "@/assets/hero-sea-sunset.jpg";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Professional massage therapy environment with candles and massage stones"
+          alt="Serene sunset over calm ocean waves representing relaxation and peace"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/60" />

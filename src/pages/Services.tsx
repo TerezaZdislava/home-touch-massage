@@ -7,6 +7,9 @@ import { Activity, Wind, Sparkles, Users, Dumbbell, Leaf, Clock } from "lucide-r
 import sportsImage from "@/assets/sports-massage.jpg";
 import antiStressImage from "@/assets/antistress-massage.jpg";
 import couplesImage from "@/assets/couples-massage.jpg";
+import swedishImage from "@/assets/swedish-massage.jpg";
+import deepTissueImage from "@/assets/deep-tissue-massage.jpg";
+import aromaImage from "@/assets/aroma-massage.jpg";
 
 const allServices = [
   {
@@ -33,7 +36,7 @@ const allServices = [
     description: "A personalized treatment tailored to your unique needs. I'll combine various techniques based on your preferences and problem areas. This flexible approach ensures you get exactly what your body needs each session.",
     duration: "60 min",
     price: "$85",
-    image: sportsImage,
+    image: swedishImage,
     benefits: ["Personalized approach", "Flexible techniques", "Addresses specific issues", "Evolves with your needs"],
   },
   {
@@ -51,7 +54,7 @@ const allServices = [
     description: "An extended 90-minute session focused on deep muscle work and comprehensive body regeneration. Ideal for those with chronic tension, physically demanding jobs, or high stress levels. This treatment goes beyond surface relaxation to create lasting change.",
     duration: "90 min",
     price: "$110 (15% off)",
-    image: sportsImage,
+    image: deepTissueImage,
     benefits: ["Deep muscle work", "Chronic pain relief", "Extended session", "Comprehensive treatment"],
   },
   {
@@ -60,7 +63,7 @@ const allServices = [
     description: "A deeply calming experience using carefully selected essential oils to enhance relaxation. This gentle massage combines aromatherapy benefits with soothing techniques, perfect for evening sessions to promote restful sleep and complete unwinding.",
     duration: "60 min",
     price: "$80",
-    image: antiStressImage,
+    image: aromaImage,
     benefits: ["Essential oils included", "Deep relaxation", "Better sleep", "Aromatherapy benefits"],
   },
 ];
