@@ -43,12 +43,12 @@ const Discounts = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4">Special Offers</Badge>
+          <Badge variant="secondary" className="mb-4">Speciální nabídky</Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Current Promotions
+            Aktuálně pro vás
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Take advantage of our special discounts and make regular self-care more affordable
+            Využijte speciálních nabídek a zařaďte pravidelný odpočinek do svého života
           </p>
         </div>
 
@@ -75,8 +75,7 @@ const Discounts = () => {
         {/* Trust Message */}
         <div className="mt-16 text-center">
           <p className="text-lg italic text-muted-foreground max-w-xl mx-auto">
-            "Trust built through touch. A massage that keeps you coming back. 
-            Because your body deserves consistency."
+            "Důvěra budovaná dotekem. Masáž, ke které se budete chtít vracet. Protože pravidelnost je to, co vaše tělo skutečně ocení."
           </p>
         </div>
       </div>
