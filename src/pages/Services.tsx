@@ -15,7 +15,7 @@ const allServices = [
   {
     icon: Activity,
     title: "Sportovní a regenerační péče",
-    description: "Cílená úleva pro svaly sportovců a aktivních lidí. Tato intenzivní péče se zaměřuje na problematické partie, napomáhá regeneraci po výkonu a slouží jako účinná prevence zranění. Ideální volba pro běžce, fitness nadšence a každého, kdo žije v pohybu.“,
+    description: "Cílená úleva pro svaly sportovců a aktivních lidí. Tato intenzivní péče se zaměřuje na problematické partie, napomáhá regeneraci po výkonu a slouží jako účinná prevence zranění. Ideální volba pro běžce, fitness nadšence a každého, kdo žije v pohybu.",
     duration: "60 min",
     price: "$80",
     image: sportsImage,
@@ -24,7 +24,7 @@ const allServices = [
   {
     icon: Wind,
     title: "Antistresová masáž",
-    description: "Jemné, plynulé techniky v kombinaci s aromaterapií pro hluboké uvolnění těla i mysli. Tato masáž pomáhá zmírňovat úzkost, zlepšuje kvalitu spánku a navrací vnitřní rovnováhu. Je ideální volbou pro vytížené profesionály i pro každého, kdo hledá únik od každodenního stresu.“,
+    description: "Jemné, plynulé techniky v kombinaci s aromaterapií pro hluboké uvolnění těla i mysli. Tato masáž pomáhá zmírňovat úzkost, zlepšuje kvalitu spánku a navrací vnitřní rovnováhu. Je ideální volbou pro vytížené profesionály i pro každého, kdo hledá únik od každodenního stresu.",
     duration: "60 min",
     price: "$75",
     image: antiStressImage,
@@ -33,7 +33,7 @@ const allServices = [
   {
     icon: Sparkles,
     title: "Masáž na míru",
-    description: "Osobní přístup a péče přizpůsobená vašim jedinečným potřebám. Při každém setkání kombinuji různé techniky podle vašich preferencí a aktuálních problematických partií. Tento flexibilní přístup zajišťuje, že vaše tělo dostane přesně to, co v danou chvíli nejvíce potřebuje.“,
+    description: "Osobní přístup a péče přizpůsobená vašim jedinečným potřebám. Při každém setkání kombinuji různé techniky podle vašich preferencí a aktuálních problematických partií. Tento flexibilní přístup zajišťuje, že vaše tělo dostane přesně to, co v danou chvíli nejvíce potřebuje.",
     duration: "60 min",
     price: "$85",
     image: swedishImage,
@@ -51,7 +51,7 @@ const allServices = [
   {
     icon: Dumbbell,
     title: "Hloubková regenerace tkání",
-    description: "Intenzivní 90minutová terapie zaměřená na hloubkovou práci se svaly a celkovou obnovu těla. Tato masáž je ideální pro ty, kteří se potýkají s chronickým napětím, mají fyzicky náročné povolání nebo procházejí obdobím vysokého stresu. Ošetření nejde jen po povrchu, ale proniká do hloubky, aby přineslo skutečnou a trvalou úlevu.“,
+    description: "Intenzivní 90minutová terapie zaměřená na hloubkovou práci se svaly a celkovou obnovu těla. Tato masáž je ideální pro ty, kteří se potýkají s chronickým napětím, mají fyzicky náročné povolání nebo procházejí obdobím vysokého stresu. Ošetření nejde jen po povrchu, ale proniká do hloubky, aby přineslo skutečnou a trvalou úlevu.",
     duration: "90 min",
     price: "$110 (15% off)",
     image: deepTissueImage,
@@ -60,7 +60,7 @@ const allServices = [
   {
     icon: Leaf,
     title: "Masáž s aromaterapií",
-    description: "Hluboce uklidňující prožitek využívající pečlivě vybrané esenciální oleje pro umocnění celkové relaxace. Tato jemná masáž propojuje sílu aromaterapie s konejšivými technikami. Je ideální volbou pro večerní hodiny, kdy napomáhá ke klidnému spánku a úplnému vypnutí po náročném dni.“,
+    description: "Hluboce uklidňující prožitek využívající pečlivě vybrané esenciální oleje pro umocnění celkové relaxace. Tato jemná masáž propojuje sílu aromaterapie s konejšivými technikami. Je ideální volbou pro večerní hodiny, kdy napomáhá ke klidnému spánku a úplnému vypnutí po náročném dni.",
     duration: "60 min",
     price: "$80",
     image: aromaImage,
