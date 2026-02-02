@@ -14,57 +14,57 @@ import aromaImage from "@/assets/aroma-massage.jpg";
 const allServices = [
   {
     icon: Activity,
-    title: "Sports Massage",
-    description: "Targeted muscle relief designed specifically for athletes and physically active individuals. This intensive treatment focuses on problem areas, helping with post-exercise recovery and injury prevention. Perfect for runners, gym enthusiasts, and anyone with an active lifestyle.",
+    title: "Sportovní a regenerační péče",
+    description: "Cílená úleva pro svaly sportovců a aktivních lidí. Tato intenzivní péče se zaměřuje na problematické partie, napomáhá regeneraci po výkonu a slouží jako účinná prevence zranění. Ideální volba pro běžce, fitness nadšence a každého, kdo žije v pohybu.“,
     duration: "60 min",
     price: "$80",
     image: sportsImage,
-    benefits: ["Muscle recovery", "Injury prevention", "Increased flexibility", "Pain relief"],
+    benefits: ["Svalová regenerace", "Prevence zranění", "Zvýšení flexibility", "Úleva od bolesti"],
   },
   {
     icon: Wind,
-    title: "Anti-Stress Massage",
-    description: "Gentle, flowing techniques combined with aromatherapy to promote complete mental and physical relaxation. This massage helps reduce anxiety, improve sleep quality, and restore inner balance. Ideal for busy professionals and anyone seeking stress relief.",
+    title: "Antistresová masáž",
+    description: "Jemné, plynulé techniky v kombinaci s aromaterapií pro hluboké uvolnění těla i mysli. Tato masáž pomáhá zmírňovat úzkost, zlepšuje kvalitu spánku a navrací vnitřní rovnováhu. Je ideální volbou pro vytížené profesionály i pro každého, kdo hledá únik od každodenního stresu.“,
     duration: "60 min",
     price: "$75",
     image: antiStressImage,
-    benefits: ["Stress reduction", "Better sleep", "Mental clarity", "Emotional balance"],
+    benefits: ["Snížení stresu", "Kvalitnější spánek", "Jasná mysl", "Emoční rovnováha"],
   },
   {
     icon: Sparkles,
-    title: "Custom Massage",
-    description: "A personalized treatment tailored to your unique needs. I'll combine various techniques based on your preferences and problem areas. This flexible approach ensures you get exactly what your body needs each session.",
+    title: "Masáž na míru",
+    description: "Osobní přístup a péče přizpůsobená vašim jedinečným potřebám. Při každém setkání kombinuji různé techniky podle vašich preferencí a aktuálních problematických partií. Tento flexibilní přístup zajišťuje, že vaše tělo dostane přesně to, co v danou chvíli nejvíce potřebuje.“,
     duration: "60 min",
     price: "$85",
     image: swedishImage,
-    benefits: ["Personalized approach", "Flexible techniques", "Addresses specific issues", "Evolves with your needs"],
+    benefits: ["Osobní přístup", "Kombinace technik na míru", "Řešení konkrétních potíží", "Péče, která se vyvíjí s vámi"],
   },
   {
     icon: Users,
-    title: "Couples Massage",
-    description: "Share the relaxation experience with your partner, friend, or family member. Two massages performed back-to-back or simultaneously in your home. A perfect way to bond while enjoying professional therapeutic care together.",
+    title: "Masáž pro dva",
+    description: "Sdílejte zážitek hluboké relaxace se svým partnerem, blízkým přítelem nebo členem rodiny. Dvě masáže probíhající po sobě nebo současně přímo u vás doma. Ideální způsob, jak prohloubit vzájemné pouto a společně si vychutnat profesionální terapeutickou péči.",
     duration: "60 min each",
-    price: "$120 (50% off 2nd person)",
+    price: "$120 (50% sleva pro druhou osobu)",
     image: couplesImage,
-    benefits: ["Shared experience", "Quality time together", "50% discount", "Convenient scheduling"],
+    benefits: ["Sdílený zážitek", "Společně strávený čas", "Sleva 50 % na druhou masáž", "Flexibilní plánování"],
   },
   {
     icon: Dumbbell,
-    title: "Deep Tissue Regeneration",
-    description: "An extended 90-minute session focused on deep muscle work and comprehensive body regeneration. Ideal for those with chronic tension, physically demanding jobs, or high stress levels. This treatment goes beyond surface relaxation to create lasting change.",
+    title: "Hloubková regenerace tkání",
+    description: "Intenzivní 90minutová terapie zaměřená na hloubkovou práci se svaly a celkovou obnovu těla. Tato masáž je ideální pro ty, kteří se potýkají s chronickým napětím, mají fyzicky náročné povolání nebo procházejí obdobím vysokého stresu. Ošetření nejde jen po povrchu, ale proniká do hloubky, aby přineslo skutečnou a trvalou úlevu.“,
     duration: "90 min",
     price: "$110 (15% off)",
     image: deepTissueImage,
-    benefits: ["Deep muscle work", "Chronic pain relief", "Extended session", "Comprehensive treatment"],
+    benefits: ["Hloubkové uvolnění svalů", "Úleva od chronické bolesti", "Prodloužená délka terapie", "Komplexní regenerace těla"],
   },
   {
     icon: Leaf,
-    title: "Aroma Relax Massage",
-    description: "A deeply calming experience using carefully selected essential oils to enhance relaxation. This gentle massage combines aromatherapy benefits with soothing techniques, perfect for evening sessions to promote restful sleep and complete unwinding.",
+    title: "Masáž s aromaterapií",
+    description: "Hluboce uklidňující prožitek využívající pečlivě vybrané esenciální oleje pro umocnění celkové relaxace. Tato jemná masáž propojuje sílu aromaterapie s konejšivými technikami. Je ideální volbou pro večerní hodiny, kdy napomáhá ke klidnému spánku a úplnému vypnutí po náročném dni.“,
     duration: "60 min",
     price: "$80",
     image: aromaImage,
-    benefits: ["Essential oils included", "Deep relaxation", "Better sleep", "Aromatherapy benefits"],
+    benefits: ["Včetně esenciálních olejů", "Hluboké uvolnění", "Kvalitnější spánek", "Blahodárné účinky aromaterapie"],
   },
 ];
 
@@ -130,7 +130,7 @@ const Services = () => {
 
                         {/* Benefits */}
                         <div className="mb-4">
-                          <h3 className="text-sm font-semibold text-foreground mb-2">Key Benefits:</h3>
+                          <h3 className="text-sm font-semibold text-foreground mb-2">Výhody:</h3>
                           <div className="flex flex-wrap gap-2">
                             {service.benefits.map((benefit, i) => (
                               <span key={i} className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full">
@@ -142,7 +142,7 @@ const Services = () => {
 
                         <Link to="/booking">
                           <Button variant="default" className="mt-2">
-                            Book This Service
+                            Rezervovat službu
                           </Button>
                         </Link>
                       </CardContent>
@@ -159,16 +159,15 @@ const Services = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Mobile Service Convenience
+                Mobilní masérské služby
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                I bring the spa experience to you. Every session includes a professional massage table, 
-                fresh towels, premium oils, and calming music. You provide the space, I provide everything else.
-                No travel stress, no parking hassles – just pure relaxation in your own home.
+                Přináším atmosféru lázní přímo k vám. Ke každé masáži zajišťuji profesionální lehátko, čisté ručníky, oleje v bio kvalitě i uklidňující hudbu. Vy připravíte pouze prostor, o vše ostatní se postarám já.
+                Místo stresu z cestování nebo hledání parkování vás čeká jen ničím nerušená relaxace v bezpečí vašeho domova.“
               </p>
               <Link to="/booking">
                 <Button variant="hero" size="lg">
-                  Book Your Home Session
+                  Rezervujte si domácí masáž
                 </Button>
               </Link>
             </div>
