@@ -31,7 +31,7 @@ const services = [
     title: "Masáže pro páry",
     description: "Masáž pro dva: Sdílejte zážitek relaxace se svým partnerem. Dvě masáže, jeden společný okamžik klidu. Prožijte uvolnění bok po boku a odneste si společný pocit harmonie.",
     duration: "60 min each",
-    price: "$120 (50% off 2nd person)",
+    price: "$120 (50% sleva pro druhou osobu)",
     image: couplesImage,
   },
 ];
@@ -43,7 +43,7 @@ const ServicesPreview = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Péče na míru: Masáž navržená přesně pro vaše potřeby. 
+            Péče na míru: masáž navržená přesně pro vaše potřeby. 
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Věřím v jedinečnost každého těla. Proto každé ošetření přizpůsobuji vašemu aktuálnímu stavu a cílům, kterých chcete dosáhnout.
