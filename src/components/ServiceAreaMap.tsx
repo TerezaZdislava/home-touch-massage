@@ -34,7 +34,7 @@ const ServiceAreaMap = () => {
       <div className="p-8 text-center">
         <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
         <p className="text-lg text-foreground leading-relaxed mb-4">
-          I serve Rotterdam city center and surrounding neighborhoods within a 30 km radius.
+          Pracuji v Rotterdamu a okolí do 30 km od centra města.
         </p>
         <p className="text-sm text-muted-foreground">
           Neem contact op om te bevestigen dat ik uw locatie bedien!
