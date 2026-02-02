@@ -78,11 +78,10 @@ const Services = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                Massage Services
+                Masérské služby na míru vašim cílům
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Professional therapeutic massages tailored to your wellness goals. 
-                All treatments performed in the comfort of your home with premium equipment and oils.
+                Profesionální masáže, které naslouchají vašim potřebám. Kompletní péči včetně špičkového vybavení a olejů přivezu přímo k vám domů.
               </p>
             </div>
           </div>
@@ -163,7 +162,7 @@ const Services = () => {
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 Přináším atmosféru lázní přímo k vám. Ke každé masáži zajišťuji profesionální lehátko, čisté ručníky, oleje v bio kvalitě i uklidňující hudbu. Vy připravíte pouze prostor, o vše ostatní se postarám já.
-                Místo stresu z cestování nebo hledání parkování vás čeká jen ničím nerušená relaxace v bezpečí vašeho domova.“
+                Místo stresu z cestování nebo hledání parkování vás čeká jen ničím nerušená relaxace v bezpečí vašeho domova.
               </p>
               <Link to="/booking">
                 <Button variant="hero" size="lg">
