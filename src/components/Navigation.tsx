@@ -10,10 +10,10 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   const navLinks = [
-    { path: "/", label: "Home" },
-    { path: "/services", label: "Services" },
-    { path: "/booking", label: "Book Now" },
-    { path: "/contact", label: "Contact" },
+    { path: "/", label: "Domů" },
+    { path: "/services", label: "Služby" },
+    { path: "/booking", label: "Rezervovat nyní" },
+    { path: "/contact", label: "Kontakt" },
   ];
 
   return (
@@ -25,7 +25,7 @@ const Navigation = () => {
             <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">M</span>
             </div>
-            <span className="font-semibold text-lg text-foreground hidden sm:inline">Mobile Massage</span>
+            <span className="font-semibold text-lg text-foreground hidden sm:inline">Mobilní masáže</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -50,7 +50,7 @@ const Navigation = () => {
               <span className="font-medium">+1 (234) 567-890</span>
             </a>
             <Link to="/booking">
-              <Button variant="default" size="default">Book Now</Button>
+              <Button variant="default" size="default">Rezervovat nyní</Button>
             </Link>
           </div>
 
