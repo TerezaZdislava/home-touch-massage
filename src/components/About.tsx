@@ -4,10 +4,10 @@ import therapistProfile from "@/assets/therapist-profile.jpg";
 
 const About = () => {
   const qualities = [
-    { icon: Shield, text: "Certified Professional – Licensed & insured" },
-    { icon: CheckCircle2, text: "500+ Clients – Long-term relationships" },
-    { icon: CheckCircle2, text: "Empathetic Care – Your wellness matters" },
-    { icon: Clock, text: "Flexible Hours – Evening & weekends" },
+    { icon: Shield, text: "Certifikovaný profesionál" },
+    { icon: CheckCircle2, text: "500+ klientů a stálých zákazníků" },
+    { icon: CheckCircle2, text: "Empatický přístup – Vaše pohodlí je prioritou" },
+    { icon: Clock, text: "Časově flexibilní – Večery & víkendy" },
   ];
 
   return (
