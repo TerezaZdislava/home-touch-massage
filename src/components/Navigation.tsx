@@ -12,7 +12,7 @@ const Navigation = () => {
   const navLinks = [
     { path: "/", label: "Domů" },
     { path: "/services", label: "Služby" },
-    { path: "/booking", label: "Rezervovat nyní" },
+    { path: "/booking", label: "Rezervace" },
     { path: "/contact", label: "Kontakt" },
   ];
 
