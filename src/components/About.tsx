@@ -17,12 +17,12 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-garamond font-bold text-foreground mb-12 text-center">
-              Where Healing Begins
+              Místo, kde začíná úleva
             </h2>
             
             <div className="mb-12">
               <h3 className="text-2xl md:text-3xl font-garamond font-semibold text-primary mb-8 text-center">
-                Healing Hands, Caring Heart
+                Síla doteku, hloubka pozornosti
               </h3>
               
               {/* Side-by-side layout: Photo + Text */}
@@ -45,20 +45,16 @@ const About = () => {
                 {/* Text Content */}
                 <div className="space-y-6 text-lg text-foreground leading-relaxed">
                   <p>
-                    My journey into massage therapy began with a simple belief: everyone deserves to feel 
-                    their best, without having to leave the comfort of their home.
+                    Od dětství mě fascinovalo, co všechno lidské tělo dokáže – jeho síla, adaptabilita, odolnost i schopnost precizně reagovat na dotyk, dech či pohyb. Pozoroval jsem lidi kolem sebe: sportovce, tanečníky, jogíny i bojovníky. Zajímal mě jejich skrytý potenciál i to, jakým způsobem propojují tělo s myslí. Postupně jsem začal vnímat lidskou schránku jako dar, který si zaslouží hlubokou péči, údržbu a neutuchající respekt.
                   </p>
                   <p>
-                    For over 8 years, I've been dedicated to bringing professional, therapeutic massage 
-                    services directly to my clients. I understand that life can be hectic, and finding time 
-                    for self-care isn't always easy. That's why I created Serene Touch – to make wellness 
-                    accessible, convenient, and deeply personal.
+                    V mládí jsem prozkoumával nejrůznější formy pohybu a cvičení, čímž jsem přirozeně objevoval i svět masáží a strečinku. Intuitivně jsem začal uvolňovat svalové napětí sobě i ostatním. Pozitivní ohlasy okolí mě utvrdily v tom, že mám pro dotyk přirozený cit. To mě ve dvaceti letech přivedlo k prvnímu masérskému kurzu, kde jsem poprvé pocítil, že tato cesta se mnou skutečně rezonuje.
                   </p>
                   <p>
-                    My approach is empathetic and client-centered. I take the time to understand your unique 
-                    needs, whether you're recovering from an injury, managing stress, or simply seeking deep 
-                    relaxation. Each session is tailored to you, because your body deserves consistency and care.
+                    Moje první zásadní profesní zkušenost přišla v pivních lázních. Tam jsem se učil pracovat s rozmanitými typy postav, různými stupni únavy i specifickými blokádami. Získal jsem zde potřebnou jistotu, rytmus a schopnost naslouchat potřebám klienta. Následně mě život zavedl na Island – do proslulé Modré laguny. Práce v tomto unikátním prostředí mě seznámila s úplně jinou dimenzí péče. Vodní masáže mě naučily ještě větší citlivosti, vnitřnímu klidu a preciznosti.
                   </p>
+                  <p>Cennou zkušeností byla také spolupráce s lektorkou tradiční čínské medicíny, která mě posunula k hlubšímu porozumění energetice těla. Lidé se ke mně začali vracet a jejich zpětná vazba mě utvrdila v tom, že masáž není jen služba, ale rituál, který navrací tělu lehkost a funkčnost.</p>
+                  <p>Dnes všechny tyto zkušenosti propojuji ve vlastní praxi El Sol. Ta vychází z principů jednoduchosti, plné pozornosti a respektu k individuálním potřebám každého těla. Masáž vnímám jako harmonickou kombinaci techniky, vjemu a intuice. Mým cílem je, aby uvolněné tělo přineslo hluboký klid i vaší mysli.</p>
                 </div>
               </div>
             </div>
@@ -78,7 +74,7 @@ const About = () => {
 
             {/* Quote */}
             <blockquote className="text-xl md:text-2xl font-garamond italic text-center text-muted-foreground py-8 border-t border-b border-border">
-              "A massage that keeps you coming back. Because your body deserves consistency."
+              „Masáž, ke které se budete chtít vracet. Protože pravidelnost je to, co vaše tělo skutečně ocení."
             </blockquote>
           </div>
         </div>
