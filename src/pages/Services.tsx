@@ -78,10 +78,10 @@ const Services = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                Masérské služby na míru vašemu aktuálnímu stavu a cílům
+                Profesionální masáže, které naslouchají vašim potřebám
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Profesionální masáže, které naslouchají vašim potřebám. Kompletní péči včetně špičkového vybavení a olejů přivezu přímo k vám domů.
+                Každé ošetření přizpůsobuji vašemu aktuálnímu stavu a cílům, kterých chcete dosáhnout. Kompletní péči včetně špičkového vybavení a olejů přivezu přímo k vám domů.
               </p>
             </div>
           </div>
