@@ -12,24 +12,24 @@ import aromaImage from "@/assets/aroma-massage.jpg";
 const services = [
   {
     icon: Activity,
-    title: "Sports Massage",
-    description: "Targeted muscle relief for athletes and active individuals. Perfect for post-exercise recovery and injury prevention.",
+    title: "Sportovní a regenerační péče",
+    description: "Cílená úleva pro sportovce a aktivní životní styl. Ideální volba pro regeneraci po tréninku i jako účinná prevence zranění. Pomáhám vašim svalům k rychlejší obnově a lepšímu výkonu.",
     duration: "60 min",
     price: "$80",
     image: sportsImage,
   },
   {
     icon: Wind,
-    title: "Anti-Stress Massage",
-    description: "Gentle techniques combined with aromatherapy for complete mental and physical relaxation.",
+    title: "Antistresová terapie",
+    description: "Jemné techniky v doprovodu aromaterapie pro hluboké uvolnění těla i mysli. Kombinace citlivého doteku a esenciálních olejů, která vás zbaví napětí a navrátí vám pocit vnitřního klidu.",
     duration: "60 min",
     price: "$75",
     image: antiStressImage,
   },
   {
     icon: Users,
-    title: "Couples Massage",
-    description: "Share the relaxation experience with your partner. Two massages, one peaceful moment.",
+    title: "Masáže pro páry",
+    description: "Masáž pro dva: Sdílejte zážitek relaxace se svým partnerem. Dvě masáže, jeden společný okamžik klidu. Prožijte uvolnění bok po boku a odneste si společný pocit harmonie.",
     duration: "60 min each",
     price: "$120 (50% off 2nd person)",
     image: couplesImage,
@@ -43,10 +43,10 @@ const ServicesPreview = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Massage Services
+            Péče na míru: Masáž navržená přesně pro vaše potřeby. 
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Tailored treatments designed to meet your specific wellness needs
+            Věřím v jedinečnost každého těla. Proto každé ošetření přizpůsobuji vašemu aktuálnímu stavu a cílům, kterých chcete dosáhnout.
           </p>
         </div>
 
@@ -90,7 +90,7 @@ const ServicesPreview = () => {
         <div className="text-center">
           <Link to="/services">
             <Button variant="default" size="lg">
-              View All Services
+              Všechny služby
             </Button>
           </Link>
         </div>
