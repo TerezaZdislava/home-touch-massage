@@ -14,36 +14,35 @@ const Footer = () => {
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">M</span>
               </div>
-              <span className="font-semibold text-lg text-foreground">Mobile Massage</span>
+              <span className="font-semibold text-lg text-foreground">Mobilní masáže</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Professional mobile massage therapy services delivered to your home. 
-              Experience relaxation without leaving your comfort zone.
+              Dopřejte si prvotřídní péči bez nutnosti kamkoliv cestovat. Přináším relaxaci přímo do vašeho obývacího pokoje, abyste si mohli odpočinek vychutnat v maximálním pohodlí.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-foreground mb-4">Odkazy</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Home
+                  Domů
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Services
+                  Služby
                 </Link>
               </li>
               <li>
                 <Link to="/booking" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Book Now
+                  Rezervace
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Contact
+                  Kontakt
                 </Link>
               </li>
             </ul>
@@ -51,7 +50,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Contact</h3>
+            <h3 className="font-semibold text-foreground mb-4">Kontakt</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
@@ -76,13 +75,13 @@ const Footer = () => {
 
           {/* Hours */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Service Hours</h3>
+            <h3 className="font-semibold text-foreground mb-4">Pracovní doba</h3>
             <div className="flex items-start gap-2 mb-4">
               <Clock className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
               <div className="text-sm text-muted-foreground">
-                <p>Monday - Saturday</p>
+                <p>Pondělí - sobota</p>
                 <p className="font-medium">9:00 AM - 9:00 PM</p>
-                <p className="mt-2">Sunday</p>
+                <p className="mt-2">Neděle</p>
                 <p className="font-medium">10:00 AM - 6:00 PM</p>
               </div>
             </div>
@@ -92,7 +91,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Mobile Massage. All rights reserved. Professional massage therapy services.
+            © {currentYear} Mobilní masáže. Všechna práva vyhrazena. Profesionální masérské služby.
           </p>
         </div>
       </div>
