@@ -21,8 +21,8 @@ const Hero = () => {
         <div className="max-w-2xl">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
             Profesionální mobilní masáže pro tělo v zátěži
-            <span className="block text-primary mt-2">Úleva, regenerace a návrat do pohybu – přímo u vás doma</span>
           </h1>
+          <h3 className="text-2xl md:text-3xl font-garamond font-semibold text-primary mb-8">Úleva, regenerace a návrat do pohybu – přímo u vás doma</h3>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
             Pomáhám lidem, kteří své tělo používají každý den.
