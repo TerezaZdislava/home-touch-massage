@@ -12,26 +12,26 @@ import aromaImage from "@/assets/aroma-massage.jpg";
 const services = [
   {
     icon: Activity,
-    title: "Sportovní a regenerační péče",
-    description: "Cílená úleva pro sportovce a aktivní životní styl. Ideální volba pro regeneraci po tréninku i jako účinná prevence zranění. Pomáhám vašim svalům k rychlejší obnově a lepšímu výkonu.",
+    title: "BOX 1 – 60 minut",
+    description: "Vhodné pro cílenou práci na konkrétní oblasti. Uvolnění přetížených svalů, rozhýbání ztuhlosti nebo rychlá regenerace po zátěži.",
     duration: "60 min",
-    price: "$80",
+    price: "990 Kč",
     image: sportsImage,
   },
   {
     icon: Wind,
-    title: "Antistresová terapie",
-    description: "Jemné techniky v doprovodu aromaterapie pro hluboké uvolnění těla i mysli. Kombinace citlivého doteku a esenciálních olejů, která vás zbaví napětí a navrátí vám pocit vnitřního klidu.",
-    duration: "60 min",
-    price: "$75",
+    title: "BOX 2 – 90 minut (doporučený střed)",
+    description: "Nejvyváženější varianta.Dostatek času na důkladnou práci i celkové uvolnění.",
+    duration: "90 min",
+    price: "1 390 Kč",
     image: antiStressImage,
   },
   {
     icon: Users,
-    title: "Masáže pro páry",
+    title: "BOX 3 – 120 minut",
     description: "Masáž pro dva: Sdílejte zážitek relaxace se svým partnerem. Dvě masáže, jeden společný okamžik klidu. Prožijte uvolnění bok po boku a odneste si společný pocit harmonie.",
-    duration: "60 min each",
-    price: "$120 (50% sleva pro druhou osobu)",
+    duration: "120 min each",
+    price: "1 790 Kč",
     image: couplesImage,
   },
 ];
@@ -43,10 +43,12 @@ const ServicesPreview = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Péče na míru: masáž navržená přesně pro vaše potřeby. 
+            Masáž na míru: masáž navržená podle toho, co vaše tělo právě potřebuje.
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Věřím v jedinečnost každého těla. Proto každé ošetření přizpůsobuji vašemu aktuálnímu stavu a cílům, kterých chcete dosáhnout.
+            Vnímám, kde je tělo přetížené, ztuhlé nebo unavené – a kde naopak potřebuje rozhýbat, uvolnit nebo zpomalit.
+            Podle toho volím techniky, tempo i intenzitu, aby masáž měla skutečný účinek, ne jen krátkodobý efekt. <br />
+            Délku volíte podle toho, kolik prostoru chcete dát tělu. Styl a průběh masáže vždy přizpůsobuji aktuálnímu stavu.
           </p>
         </div>
 
