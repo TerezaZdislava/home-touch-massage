@@ -17,12 +17,12 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-garamond font-bold text-foreground mb-12 text-center">
-              Místo, kde začíná úleva
+              Jak pracuji
             </h2>
             
             <div className="mb-12">
               <h3 className="text-2xl md:text-3xl font-garamond font-semibold text-primary mb-8 text-center">
-                Práce s tělem, která má smysl
+                Masáž, která má smysl
               </h3>
               
               {/* Side-by-side layout: Photo + Text */}
@@ -45,16 +45,20 @@ const About = () => {
                 {/* Text Content */}
                 <div className="space-y-6 text-lg text-foreground leading-relaxed">
                   <p>
-                    Fascinuje mě, co všechno lidské tělo dokáže – jeho síla, odolnost i schopnost reagovat na dotyk, dech a pohyb.
-                    Masáž vnímám jako způsob, jak tělu vrátit funkčnost, lehkost a klid v době, kdy je vystaveno dlouhodobé zátěži.
+                    Pracuji cíleně tam, kde je tělo ztuhlé, přetížené nebo omezené v pohybu.
+                    Pokud není potřeba řešit konkrétní problém, dopřeji mu klidnou, plynulou péči, která umožní hluboké uvolnění.
                   </p>
+                  <p>
+                    Každé ošetření přizpůsobuji aktuálnímu stavu – ne podle šablony, ale podle reality daného dne.
+                    Mým cílem je, aby masáž nebyla jen krátkou úlevou, ale prostorem pro obnovu, rovnováhu a dlouhodobou péči.
+                  </p>
+                  <p>Vítejte v mém světě odpočinku a obnovy. ☀️</p>
                   <p>
                     Vycházím z praxe v salonech a lázních, vlastní zkušenosti s pohybem a práce s různými typy těl.
                     Každé ošetření přizpůsobuji tomu, co tělo skutečně potřebuje v daný den – někdy je to cílená práce se ztuhlostí, jindy zpomalení a prostor pro regeneraci.
                   </p>
                   <p>
-                    Mým cílem je, aby masáž nebyla jen krátkou úlevou, ale krokem k dlouhodobějšímu pocitu rovnováhy v těle i mysli.
-                    Vítejte v mém světě odpočinku, relaxace a obnovy. ☀️
+                    Respektuji hranice těla, pracuji soustředěně a s důrazem na skutečný účinek – ne jen krátkodobý pocit úlevy.
                   </p>
                 </div>
               </div>
