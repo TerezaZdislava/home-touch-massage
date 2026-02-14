@@ -20,20 +20,20 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Profesionální mobilní masáže pro tělo v zátěži
+            Masáže pro funkční a vyvážené tělo
           </h1>
-          <h3 className="text-2xl md:text-3xl font-garamond font-semibold text-primary mb-8">Úleva, regenerace a návrat do pohybu – přímo u vás doma</h3>
+          <h3 className="text-2xl md:text-3xl font-garamond font-semibold text-primary mb-8">Úleva, regenerace a návrat do pohybu – přímo u Vás doma</h3>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
             Pomáhám lidem, kteří své tělo používají každý den.
             <br />
-            Ať už sportujete, pracujete fyzicky, nebo trávíte dlouhé hodiny u počítače, masáž vždy přizpůsobím tomu, co vaše tělo potřebuje právě teď.
+            Ať už sportujete, pracujete fyzicky, nebo trávíte dlouhé hodiny u počítače, masáž vždy přizpůsobím tomu, co Vaše tělo potřebuje právě teď.
           </p>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-            Pracuji silově a cíleně tam, kde je ztuhlost, bolest a přetížení.
+            Pracuji silově a cíleně tam, kde je ztuhlost, přetížení nebo omezení pohybu.
             <br />
-            Zároveň umím zpomalit a vytvořit prostor pro klid, regeneraci a uvolnění mysli.
+            Zároveň umím zpomalit a vytvořit prostor pro klid, uvolnění a celkovou obnovu.
           </p>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
@@ -44,15 +44,15 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4 mb-8">
             <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-border shadow-sm">
               <Heart className="w-5 h-5 text-primary" />
-              <span className="text-sm font-medium">Regenerace</span>
+              <span className="text-sm font-medium">Přijedu za vámi</span>
             </div>
             <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-border shadow-sm">
               <Sparkles className="w-5 h-5 text-primary" />
-              <span className="text-sm font-medium">Přítomnost</span>
+              <span className="text-sm font-medium">Vlastní vybavení</span>
             </div>
             <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-border shadow-sm">
               <Shield className="w-5 h-5 text-primary" />
-              <span className="text-sm font-medium">Rovnováha</span>
+              <span className="text-sm font-medium">Individuální přístup</span>
             </div>
           </div>
 
