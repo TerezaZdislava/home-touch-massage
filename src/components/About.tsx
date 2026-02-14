@@ -61,7 +61,7 @@ const About = () => {
       {/* ─── SECTION 2: Pro koho je masáž vhodná ─── */}
       <section className="bg-secondary/40 py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-xl mx-auto">
+          <div className="max-w-xl mx-auto w-max">
             <h3 className="text-2xl md:text-3xl font-garamond font-semibold text-primary mb-4">
               Pro koho je masáž vhodná
             </h3>
@@ -93,7 +93,7 @@ const About = () => {
       {/* ─── SECTION 3: O mně ─── */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-5xl mx-auto w-max">
             <h3 className="text-2xl md:text-3xl font-garamond font-semibold text-primary mb-6">
               O mně
             </h3>
