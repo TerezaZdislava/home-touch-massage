@@ -63,12 +63,8 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-xl mx-auto w-max">
             <h3 className="text-2xl md:text-3xl font-garamond font-semibold text-primary mb-4">
-              Pro koho je masáž vhodná
-            </h3>
-            <p className="text-lg text-foreground mb-6">
               Masáž je vhodná pro vás, pokud:
-            </p>
-
+            </h3>
             <ul className="space-y-3 mb-10">
               {suitableFor.map((item, index) => {
                 const Icon = item.icon;
