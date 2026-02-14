@@ -5,7 +5,7 @@ import { GraduationCap, Gift, Heart, Users } from "lucide-react";
 const discounts = [
   {
     icon: Gift,
-    title: "Loyalty Reward",
+    title: "Pravidelný rytmus",
     discount: "50% OFF",
     description: "Every 5th massage",
     details: "Because consistency deserves gratitude",
@@ -13,26 +13,10 @@ const discounts = [
   },
   {
     icon: Users,
-    title: "Duo/Group Discount",
+    title: "Sdílená péče",
     discount: "€10 OFF",
     description: "Each person saves €10",
     details: "Bring a friend",
-    color: "text-primary",
-  },
-  {
-    icon: Heart,
-    title: "Regular Packages",
-    discount: "SAVE €35-45",
-    description: "5 × 60 min = €265 | 5 × 90 min = €355",
-    details: "Best value for regular care",
-    color: "text-accent",
-  },
-  {
-    icon: GraduationCap,
-    title: "Student Deal",
-    discount: "€5 OFF",
-    description: "Each session + 5 × 60 min = €270",
-    details: "Show your student ID - shareable offer",
     color: "text-primary",
   },
 ];
@@ -45,10 +29,10 @@ const Discounts = () => {
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4">Speciální nabídky</Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Aktuálně pro vás
+            Pravidelná péče o tělo
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Využijte speciálních nabídek a zařaďte pravidelný odpočinek do svého života
+            Tělo funguje nejlépe tehdy, když mu věnujeme péči dlouhodobě. Pravidelné návštěvy umožňují kontinuitu práce, lepší výsledky a stabilnější rovnováhu.
           </p>
         </div>
 
@@ -75,7 +59,7 @@ const Discounts = () => {
         {/* Trust Message */}
         <div className="mt-16 text-center">
           <p className="text-lg italic text-muted-foreground max-w-xl mx-auto">
-            "Důvěra budovaná dotekem. Masáž, ke které se budete chtít vracet. Protože pravidelnost je to, co vaše tělo skutečně ocení."
+            "Tělo si pamatuje péči."
           </p>
         </div>
       </div>
