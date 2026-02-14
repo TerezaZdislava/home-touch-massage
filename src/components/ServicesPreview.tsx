@@ -13,7 +13,7 @@ const services = [
   {
     icon: Activity,
     title: "BOX 1 – 60 minut",
-    description: "Vhodné pro cílenou práci na konkrétní oblasti. Uvolnění přetížených svalů, rozhýbání ztuhlosti nebo rychlá regenerace po zátěži.",
+    description: "Cílená práce na konkrétní oblasti nebo udržovací péče. Vhodné při omezení pohybu, napětí nebo jako pravidelná regenerace.",
     duration: "60 min",
     price: "990 Kč",
     image: sportsImage,
@@ -21,7 +21,7 @@ const services = [
   {
     icon: Wind,
     title: "BOX 2 – 90 minut (doporučený střed)",
-    description: "Nejvyváženější varianta.Dostatek času na důkladnou práci i celkové uvolnění.",
+    description: "Nejvyváženější varianta. Dostatek času na důkladnou práci i celkové uvolnění.",
     duration: "90 min",
     price: "1 390 Kč",
     image: antiStressImage,
@@ -29,11 +29,12 @@ const services = [
   {
     icon: Users,
     title: "BOX 3 – 120 minut",
-    description: "Masáž pro dva: Sdílejte zážitek relaxace se svým partnerem. Dvě masáže, jeden společný okamžik klidu. Prožijte uvolnění bok po boku a odneste si společný pocit harmonie.",
+    description: "Prostor bez spěchu. Kombinace cílené práce, uvolnění a hlubší regenerace.",
     duration: "120 min each",
     price: "1 790 Kč",
     image: couplesImage,
   },
+
 ];
 
 const ServicesPreview = () => {
@@ -43,12 +44,11 @@ const ServicesPreview = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Masáž na míru: masáž navržená podle toho, co vaše tělo právě potřebuje.
+            Masáž na míru
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Vnímám, kde je tělo přetížené, ztuhlé nebo unavené – a kde naopak potřebuje rozhýbat, uvolnit nebo zpomalit.
-            Podle toho volím techniky, tempo i intenzitu, aby masáž měla skutečný účinek, ne jen krátkodobý efekt. <br />
-            Délku volíte podle toho, kolik prostoru chcete dát tělu. Styl a průběh masáže vždy přizpůsobuji aktuálnímu stavu.
+            Masáž je vždy přizpůsobena vašemu aktuálnímu stavu.<br />
+            Délka určuje pouze množství času, který tělu věnujeme – styl masáže a přístup zůstávají stejné.
           </p>
         </div>
 
