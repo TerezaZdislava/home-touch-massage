@@ -23,22 +23,6 @@ const Hero = () => {
             Masáže pro funkční a vyvážené tělo
           </h1>
           <h3 className="text-2xl md:text-3xl font-garamond font-semibold text-primary mb-8">Úleva, regenerace a návrat do pohybu – přímo u Vás doma</h3>
-          
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-            Pomáhám lidem, kteří své tělo používají každý den.
-            <br />
-            Ať už sportujete, pracujete fyzicky, nebo trávíte dlouhé hodiny u počítače, masáž vždy přizpůsobím tomu, co Vaše tělo potřebuje právě teď.
-          </p>
-
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-            Pracuji silově a cíleně tam, kde je ztuhlost, přetížení nebo omezení pohybu.
-            <br />
-            Zároveň umím zpomalit a vytvořit prostor pro klid, uvolnění a celkovou obnovu.
-          </p>
-
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-            Přivezu vše potřebné. Vy si jen vyhradíte čas a prostor.
-          </p>
 
           {/* Value Props */}
           <div className="flex flex-wrap gap-4 mb-8">
