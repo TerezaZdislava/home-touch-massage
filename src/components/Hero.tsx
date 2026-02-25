@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { Sparkles, Shield, Heart } from "lucide-react";
 import heroImage from "@/assets/hero-sea-sunset.jpg";
 
 const Hero = () => {
+  const scrollTo = (id: string) => {
+    const el = document.querySelector(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+    <section id="domov" className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -42,16 +46,12 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4">
-            <Link to="/booking">
-              <Button variant="hero" size="lg">
-                Rezervovat masáž
-              </Button>
-            </Link>
-            <Link to="/services">
-              <Button variant="outline" size="lg">
-                Všechny služby
-              </Button>
-            </Link>
+            <Button variant="hero" size="lg" onClick={() => scrollTo("#rezervace")}>
+              Rezervovat masáž
+            </Button>
+            <Button variant="outline" size="lg" onClick={() => scrollTo("#sluzby")}>
+              Všechny služby
+            </Button>
           </div>
         </div>
       </div>

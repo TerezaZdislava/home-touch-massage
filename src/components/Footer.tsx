@@ -1,8 +1,17 @@
-import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const scrollTo = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    if (id === "#domov") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+    const el = document.querySelector(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <footer className="bg-muted/30 border-t border-border">
@@ -26,24 +35,24 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Odkazy</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#domov" onClick={(e) => scrollTo(e, "#domov")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Domů
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#sluzby" onClick={(e) => scrollTo(e, "#sluzby")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Služby
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/booking" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#rezervace" onClick={(e) => scrollTo(e, "#rezervace")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Rezervace
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="#kontakt" onClick={(e) => scrollTo(e, "#kontakt")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Kontakt
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -80,9 +89,9 @@ const Footer = () => {
               <Clock className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
               <div className="text-sm text-muted-foreground">
                 <p>Pondělí - sobota</p>
-                <p className="font-medium">9:00 AM - 9:00 PM</p>
+                <p className="font-medium">9:00 – 21:00</p>
                 <p className="mt-2">Neděle</p>
-                <p className="font-medium">10:00 AM - 6:00 PM</p>
+                <p className="font-medium">10:00 – 18:00</p>
               </div>
             </div>
           </div>
