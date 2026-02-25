@@ -3,9 +3,13 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Clock, Users, CalendarCheck, CheckCircle, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Discounts = () => {
+  const scrollTo = (id: string) => {
+    const el = document.querySelector(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="py-20 bg-primary/5">
       <div className="container mx-auto px-4">
@@ -52,7 +56,7 @@ const Discounts = () => {
                 </li>
               </ul>
 
-              {/* Packages - Accordion for mobile friendliness */}
+              {/* Packages - Accordion */}
               <Accordion type="single" collapsible className="mb-6">
                 <AccordionItem value="packages" className="border-border/50">
                   <AccordionTrigger className="text-sm font-semibold text-foreground hover:no-underline py-3">
@@ -82,11 +86,11 @@ const Discounts = () => {
               </Accordion>
 
               <div className="flex flex-wrap gap-3">
-                <Button asChild size="sm" className="gap-1">
-                  <Link to="/booking">Rezervovat <ArrowRight className="w-3.5 h-3.5" /></Link>
+                <Button size="sm" className="gap-1" onClick={() => scrollTo("#rezervace")}>
+                  Rezervovat <ArrowRight className="w-3.5 h-3.5" />
                 </Button>
-                <Button asChild variant="outline" size="sm">
-                  <Link to="/services">Zjistit více</Link>
+                <Button variant="outline" size="sm" onClick={() => scrollTo("#sluzby")}>
+                  Zjistit více
                 </Button>
               </div>
             </CardContent>
@@ -126,11 +130,11 @@ const Discounts = () => {
               </p>
 
               <div className="flex flex-wrap gap-3">
-                <Button asChild size="sm" className="gap-1">
-                  <Link to="/booking">Rezervovat <ArrowRight className="w-3.5 h-3.5" /></Link>
+                <Button size="sm" className="gap-1" onClick={() => scrollTo("#rezervace")}>
+                  Rezervovat <ArrowRight className="w-3.5 h-3.5" />
                 </Button>
-                <Button asChild variant="outline" size="sm">
-                  <Link to="/services">Zjistit více</Link>
+                <Button variant="outline" size="sm" onClick={() => scrollTo("#sluzby")}>
+                  Zjistit více
                 </Button>
               </div>
             </CardContent>

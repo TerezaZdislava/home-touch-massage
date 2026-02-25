@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, Dumbbell, Monitor, Wrench, Battery, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import therapistProfile from "@/assets/therapist-profile.jpg";
 
 const About = () => {
@@ -14,6 +13,11 @@ const About = () => {
     { icon: Battery, text: "cítíte ztuhlost, bolest nebo únavu" },
     { icon: Heart, text: "chcete tělu dopřát pravidelnou péči a obnovu" },
   ];
+
+  const scrollTo = (id: string) => {
+    const el = document.querySelector(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div>
@@ -77,11 +81,9 @@ const About = () => {
               })}
             </ul>
 
-            <Link to="/booking">
-              <Button variant="hero" size="lg">
-                Objednat masáž
-              </Button>
-            </Link>
+            <Button variant="hero" size="lg" onClick={() => scrollTo("#rezervace")}>
+              Objednat masáž
+            </Button>
           </div>
         </div>
       </section>

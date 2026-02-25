@@ -1,13 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { Activity, Wind, Sparkles, Users, Leaf, Clock } from "lucide-react";
+import { Activity, Wind, Users, Clock } from "lucide-react";
 import sportsImage from "@/assets/sports-massage.jpg";
 import antiStressImage from "@/assets/antistress-massage.jpg";
 import couplesImage from "@/assets/couples-massage.jpg";
-import swedishImage from "@/assets/swedish-massage.jpg";
-import deepTissueImage from "@/assets/deep-tissue-massage.jpg";
-import aromaImage from "@/assets/aroma-massage.jpg";
 
 const services = [
   {
@@ -34,12 +29,11 @@ const services = [
     price: "1 790 Kč",
     image: couplesImage,
   },
-
 ];
 
 const ServicesPreview = () => {
   return (
-    <section className="py-20 bg-muted/30">
+    <section id="sluzby" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -86,15 +80,6 @@ const ServicesPreview = () => {
               </Card>
             );
           })}
-        </div>
-
-        {/* CTA */}
-        <div className="text-center">
-          <Link to="/services">
-            <Button variant="default" size="lg">
-              Všechny služby
-            </Button>
-          </Link>
         </div>
       </div>
     </section>

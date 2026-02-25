@@ -25,7 +25,7 @@ const policies = [
 
 const Reservation = () => {
   return (
-    <section className="py-24 bg-background">
+    <section id="rezervace" className="py-24 bg-background">
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Hero — centered heading + WhatsApp CTA */}
         <div className="text-center mb-20">
