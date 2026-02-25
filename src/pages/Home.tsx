@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import ServicesPreview from "@/components/ServicesPreview";
 import About from "@/components/About";
 import Discounts from "@/components/Discounts";
+import Reservation from "@/components/Reservation";
 import Footer from "@/components/Footer";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         <About />
         <ServicesPreview />
         <Discounts />
+        <Reservation />
       </main>
       <Footer />
     </div>
