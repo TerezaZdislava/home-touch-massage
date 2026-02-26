@@ -1,15 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import { useState, useCallback } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { lang, setLang, t } = useLanguage();
 
   const navLinks = [
-    { href: "#domov", label: "Domů" },
-    { href: "#sluzby", label: "Služby" },
-    { href: "#rezervace", label: "Rezervace" },
-    { href: "#kontakt", label: "Kontakt" },
+    { href: "#domov", label: t("nav.home") },
+    { href: "#sluzby", label: t("nav.services") },
+    { href: "#rezervace", label: t("nav.reservation") },
+    { href: "#kontakt", label: t("nav.contact") },
   ];
 
   const handleNavClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -38,7 +40,7 @@ const Navigation = () => {
             <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">M</span>
             </div>
-            <span className="font-semibold text-lg text-foreground hidden sm:inline">Mobilní masáže</span>
+            <span className="font-semibold text-lg text-foreground hidden sm:inline">{t("nav.brand")}</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -55,25 +57,60 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
+          {/* Language Switcher + CTA */}
           <div className="hidden md:flex items-center space-x-4">
+            {/* Language Switcher */}
+            <div className="flex items-center text-sm text-muted-foreground">
+              <button
+                onClick={() => setLang("cz")}
+                className={`transition-colors hover:text-foreground ${lang === "cz" ? "font-bold text-foreground" : ""}`}
+              >
+                CZ
+              </button>
+              <span className="mx-1.5 text-border">|</span>
+              <button
+                onClick={() => setLang("en")}
+                className={`transition-colors hover:text-foreground ${lang === "en" ? "font-bold text-foreground" : ""}`}
+              >
+                EN
+              </button>
+            </div>
+
             <a href="tel:+31642940546" className="flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
               <Phone className="w-4 h-4 mr-2" />
               <span className="font-medium">+31 6 4294 0546</span>
             </a>
             <a href="#rezervace" onClick={(e) => handleNavClick(e, "#rezervace")}>
-              <Button variant="default" size="default">Rezervovat nyní</Button>
+              <Button variant="default" size="default">{t("nav.bookNow")}</Button>
             </a>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="flex md:hidden items-center space-x-3">
+            {/* Mobile Language Switcher */}
+            <div className="flex items-center text-sm text-muted-foreground">
+              <button
+                onClick={() => setLang("cz")}
+                className={`transition-colors ${lang === "cz" ? "font-bold text-foreground" : ""}`}
+              >
+                CZ
+              </button>
+              <span className="mx-1 text-border">|</span>
+              <button
+                onClick={() => setLang("en")}
+                className={`transition-colors ${lang === "en" ? "font-bold text-foreground" : ""}`}
+              >
+                EN
+              </button>
+            </div>
+            <button
+              className="p-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}

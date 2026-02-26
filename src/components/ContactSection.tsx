@@ -1,23 +1,24 @@
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ContactSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="kontakt" className="py-28 md:py-36 bg-background">
       <div className="container mx-auto px-4 max-w-3xl">
-        {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Kontakt
+            {t("contact.title")}
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Máte dotazy? Neváhejte se ozvat.
+            {t("contact.subtitle")}
           </p>
         </div>
 
-        {/* Main Contact Block */}
         <div className="bg-secondary/70 rounded-[22px] px-8 py-16 md:px-16 md:py-20 mb-0 text-center" style={{ boxShadow: '0 6px 40px -10px hsl(25 70% 47% / 0.08)' }}>
-          <span className="text-xs text-muted-foreground/70 uppercase tracking-[0.2em] mb-4 block">Telefon</span>
+          <span className="text-xs text-muted-foreground/70 uppercase tracking-[0.2em] mb-4 block">{t("contact.phoneLabel")}</span>
           <a
             href="tel:+31642940546"
             className="block text-[32px] md:text-[36px] font-bold text-foreground hover:text-accent tracking-[0.04em] transition-colors duration-500 mb-10"
@@ -29,13 +30,13 @@ const ContactSection = () => {
             <Button asChild size="lg" className="w-full sm:w-auto rounded-full px-10 transition-all duration-500 hover:shadow-md">
               <a href="tel:+31642940546">
                 <Phone className="w-4 h-4 opacity-70" />
-                Zavolat
+                {t("contact.callBtn")}
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="w-full sm:w-auto rounded-full px-10 border-border/80 transition-all duration-500 hover:shadow-md">
               <a href="mailto:info@mobilemassage.com">
                 <Mail className="w-4 h-4 opacity-70" />
-                Napsat email
+                {t("contact.emailBtn")}
               </a>
             </Button>
           </div>
@@ -53,37 +54,34 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Info Row */}
         <div className="pt-24 md:pt-28 grid md:grid-cols-2 gap-12 md:gap-16">
-          {/* Opening Hours */}
           <div className="space-y-5">
-            <p className="text-xs text-muted-foreground/60 uppercase tracking-[0.15em]">Jsem tu pro vás v těchto časech</p>
+            <p className="text-xs text-muted-foreground/60 uppercase tracking-[0.15em]">{t("contact.hoursIntro")}</p>
             <h3 className="text-lg font-semibold text-foreground flex items-center gap-2">
               <Clock className="w-3.5 h-3.5 opacity-40" />
-              Pracovní doba
+              {t("contact.hoursTitle")}
             </h3>
             <div className="space-y-3 text-sm">
               <div className="flex justify-between max-w-xs">
-                <span className="text-muted-foreground">Pondělí – Sobota</span>
+                <span className="text-muted-foreground">{t("contact.monSat")}</span>
                 <span className="font-semibold text-foreground">9:00 – 21:00</span>
               </div>
               <div className="flex justify-between max-w-xs">
-                <span className="text-muted-foreground">Neděle</span>
+                <span className="text-muted-foreground">{t("contact.sun")}</span>
                 <span className="font-semibold text-foreground">10:00 – 18:00</span>
               </div>
             </div>
           </div>
 
-          {/* Response Time */}
           <div className="space-y-5">
             <p className="text-xs text-muted-foreground/60 uppercase tracking-[0.15em]">&nbsp;</p>
             <h3 className="text-lg font-semibold text-foreground flex items-center gap-2">
               <MessageCircle className="w-3.5 h-3.5 opacity-40" />
-              Doba odpovědi
+              {t("contact.responseTitle")}
             </h3>
             <div className="text-sm text-muted-foreground space-y-2 leading-relaxed">
-              <p>Na dotazy odpovídám obvykle do 24 hodin.</p>
-              <p>V případě urgentní rezervace zavolejte přímo.</p>
+              <p>{t("contact.responseP1")}</p>
+              <p>{t("contact.responseP2")}</p>
             </div>
           </div>
         </div>
