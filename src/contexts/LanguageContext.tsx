@@ -103,21 +103,22 @@ const translations: Record<string, Record<Lang, string>> = {
     cz: "Délka určuje pouze množství času, který tělu věnujeme – styl masáže a přístup zůstávají stejné.",
     en: "Duration only determines the amount of time we dedicate to your body – the massage style and approach remain the same.",
   },
-  "services.box1.title": { cz: "BOX 1 – 60 minut", en: "BOX 1 – 60 minutes" },
+  "services.box1.title": { cz: "60 minut", en: "60 minutes" },
   "services.box1.desc": {
     cz: "Cílená práce na konkrétní oblasti nebo udržovací péče. Vhodné při omezení pohybu, napětí nebo jako pravidelná regenerace.",
     en: "Targeted work on specific areas or maintenance care. Suitable for movement restrictions, tension or regular recovery.",
   },
-  "services.box2.title": { cz: "BOX 2 – 90 minut (doporučený střed)", en: "BOX 2 – 90 minutes (recommended)" },
+  "services.box2.title": { cz: "90 minut", en: "90 minutes" },
   "services.box2.desc": {
     cz: "Nejvyváženější varianta. Dostatek času na důkladnou práci i celkové uvolnění.",
     en: "The most balanced option. Enough time for thorough work and overall relaxation.",
   },
-  "services.box3.title": { cz: "BOX 3 – 120 minut", en: "BOX 3 – 120 minutes" },
+  "services.box3.title": { cz: "120 minut", en: "120 minutes" },
   "services.box3.desc": {
     cz: "Prostor bez spěchu. Kombinace cílené práce, uvolnění a hlubší regenerace.",
     en: "Space without rush. A combination of targeted work, relaxation and deeper recovery.",
   },
+  "services.bookBtn": { cz: "Rezervovat", en: "Book" },
 
   // Discounts
   "discounts.badge": { cz: "Speciální nabídky", en: "Special Offers" },
