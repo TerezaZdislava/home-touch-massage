@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import { useState, useCallback } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import logoSvg from "@/assets/logo.svg";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,6 @@ const Navigation = () => {
     { href: "#domov", label: t("nav.home") },
     { href: "#sluzby", label: t("nav.services") },
     { href: "#rezervace", label: t("nav.reservation") },
-    { href: "#kontakt", label: t("nav.contact") },
   ];
 
   const handleNavClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -35,11 +35,9 @@ const Navigation = () => {
           <a
             href="#domov"
             onClick={(e) => handleNavClick(e, "#domov")}
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 text-foreground"
           >
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">M</span>
-            </div>
+            <img src={logoSvg} alt="El Sol logo" className="w-10 h-10" />
             <span className="font-semibold text-lg text-foreground hidden sm:inline">{t("nav.brand")}</span>
           </a>
 
@@ -59,7 +57,6 @@ const Navigation = () => {
 
           {/* Language Switcher + CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* Language Switcher */}
             <div className="flex items-center text-sm text-muted-foreground">
               <button
                 onClick={() => setLang("cz")}
@@ -87,7 +84,6 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center space-x-3">
-            {/* Mobile Language Switcher */}
             <div className="flex items-center text-sm text-muted-foreground">
               <button
                 onClick={() => setLang("cz")}
