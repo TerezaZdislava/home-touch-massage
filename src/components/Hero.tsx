@@ -30,15 +30,15 @@ const Hero = () => {
           <h3 className="text-2xl md:text-3xl font-garamond font-semibold text-primary mb-8">{t("hero.subtitle")}</h3>
 
           <div className="flex flex-wrap gap-4 mb-8">
-            <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-border shadow-sm">
+            <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-full border border-border shadow-sm">
               <Heart className="w-5 h-5 text-primary" />
               <span className="text-sm font-medium">{t("hero.val1")}</span>
             </div>
-            <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-border shadow-sm">
+            <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-full border border-border shadow-sm">
               <Sparkles className="w-5 h-5 text-primary" />
               <span className="text-sm font-medium">{t("hero.val2")}</span>
             </div>
-            <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-border shadow-sm">
+            <div className="flex items-center gap-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-full border border-border shadow-sm">
               <Shield className="w-5 h-5 text-primary" />
               <span className="text-sm font-medium">{t("hero.val3")}</span>
             </div>
