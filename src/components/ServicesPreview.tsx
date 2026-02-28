@@ -42,30 +42,35 @@ const ServicesPreview = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`${service.bgClass} rounded-[18px] p-10 md:p-12 shadow-[0_4px_24px_-6px_hsl(25_70%_47%/0.08)] hover:shadow-[0_8px_32px_-6px_hsl(25_70%_47%/0.12)] transition-shadow duration-500`}
+              className={`${service.bgClass} rounded-[18px] p-10 md:p-12 shadow-[0_4px_24px_-6px_hsl(25_70%_47%/0.08)] hover:shadow-[0_8px_32px_-6px_hsl(25_70%_47%/0.12)] transition-shadow duration-500 flex flex-col`}
             >
-              <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                {t(service.titleKey)}
-              </h3>
-              <p className="text-xl md:text-2xl font-semibold text-primary/80 mb-6">
-                {service.price}
-              </p>
+              <div className="flex-1">
+                <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+                  {t(service.titleKey)}
+                </h3>
+                <p className="text-xl md:text-2xl font-semibold text-primary/80 mb-6">
+                  {service.price}
+                </p>
 
-              <div className="w-12 border-t border-border mb-6" />
+                <div className="w-12 border-t border-border mb-6" />
 
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                {t(service.descKey)}
-              </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {t(service.descKey)}
+                </p>
+              </div>
 
-              <Button
-                variant="outline"
-                className="w-full sm:w-auto rounded-full px-8 hover:bg-primary/5 transition-all duration-500"
-                onClick={() => {
-                  document.getElementById("rezervace")?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                {t("services.bookBtn")}
-              </Button>
+              <div className="mt-8">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="rounded-full px-8 hover:bg-primary/5 transition-all duration-500 text-sm"
+                  onClick={() => {
+                    document.getElementById("rezervace")?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  {t("services.bookBtn")}
+                </Button>
+              </div>
             </div>
           ))}
         </div>
