@@ -1,8 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Activity, Wind, Users, Clock } from "lucide-react";
-import sportsImage from "@/assets/sports-massage.jpg";
-import antiStressImage from "@/assets/antistress-massage.jpg";
-import couplesImage from "@/assets/couples-massage.jpg";
+import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const ServicesPreview = () => {
@@ -10,28 +6,22 @@ const ServicesPreview = () => {
 
   const services = [
     {
-      icon: Activity,
       titleKey: "services.box1.title",
       descKey: "services.box1.desc",
-      duration: "60 min",
-      price: "990 Kč",
-      image: sportsImage,
+      price: "75 €",
+      bgClass: "bg-secondary/50",
     },
     {
-      icon: Wind,
       titleKey: "services.box2.title",
       descKey: "services.box2.desc",
-      duration: "90 min",
-      price: "1 390 Kč",
-      image: antiStressImage,
+      price: "100 €",
+      bgClass: "bg-secondary/70",
     },
     {
-      icon: Users,
       titleKey: "services.box3.title",
       descKey: "services.box3.desc",
-      duration: "120 min",
-      price: "1 790 Kč",
-      image: couplesImage,
+      price: "130 €",
+      bgClass: "bg-[hsl(30_25%_88%)]",
     },
   ];
 
@@ -42,45 +32,42 @@ const ServicesPreview = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             {t("services.title")}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             {t("services.subtitle")}<br />
             {t("services.subtitleLine2")}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300 border-border">
-                <div className="h-48 overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={`${t(service.titleKey)} therapy session`}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-foreground">{t(service.titleKey)}</h3>
-                  </div>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
-                    {t(service.descKey)}
-                  </p>
-                  <div className="flex items-center justify-between pt-4 border-t border-border">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Clock className="w-4 h-4" />
-                      <span>{service.duration}</span>
-                    </div>
-                    <span className="text-lg font-semibold text-primary">{service.price}</span>
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className={`${service.bgClass} rounded-[18px] p-10 md:p-12 shadow-[0_4px_24px_-6px_hsl(25_70%_47%/0.08)] hover:shadow-[0_8px_32px_-6px_hsl(25_70%_47%/0.12)] transition-shadow duration-500`}
+            >
+              <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+                {t(service.titleKey)}
+              </h3>
+              <p className="text-xl md:text-2xl font-semibold text-primary/80 mb-6">
+                {service.price}
+              </p>
+
+              <div className="w-12 border-t border-border mb-6" />
+
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                {t(service.descKey)}
+              </p>
+
+              <Button
+                variant="outline"
+                className="w-full sm:w-auto rounded-full px-8 hover:bg-primary/5 transition-all duration-500"
+                onClick={() => {
+                  document.getElementById("rezervace")?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                {t("services.bookBtn")}
+              </Button>
+            </div>
+          ))}
         </div>
       </div>
     </section>
