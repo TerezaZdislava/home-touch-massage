@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import logoSvg from "@/assets/logo.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,9 +22,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">M</span>
-              </div>
+              <img src={logoSvg} alt="El Sol logo" className="w-10 h-10" />
               <span className="font-semibold text-lg text-foreground">{t("footer.brand")}</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
@@ -47,11 +46,6 @@ const Footer = () => {
               <li>
                 <a href="#rezervace" onClick={(e) => scrollTo(e, "#rezervace")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   {t("nav.reservation")}
-                </a>
-              </li>
-              <li>
-                <a href="#kontakt" onClick={(e) => scrollTo(e, "#kontakt")} className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  {t("nav.contact")}
                 </a>
               </li>
             </ul>

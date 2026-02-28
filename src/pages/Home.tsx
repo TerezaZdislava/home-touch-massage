@@ -4,7 +4,6 @@ import ServicesPreview from "@/components/ServicesPreview";
 import About from "@/components/About";
 import Discounts from "@/components/Discounts";
 import Reservation from "@/components/Reservation";
-import ContactSection from "@/components/ContactSection";
 import SocialConnect from "@/components/SocialConnect";
 import Footer from "@/components/Footer";
 
@@ -18,7 +17,6 @@ const Home = () => {
         <ServicesPreview />
         <Discounts />
         <Reservation />
-        <ContactSection />
         <SocialConnect />
       </main>
       <Footer />
