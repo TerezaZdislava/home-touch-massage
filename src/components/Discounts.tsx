@@ -28,7 +28,7 @@ const Discounts = () => {
 
         <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
           {/* Offer 1 */}
-          <Card className="border-accent/30 hover:shadow-[0_8px_32px_-6px_hsl(25_70%_47%/0.12)] transition-shadow duration-500 overflow-hidden rounded-[18px]">
+          <Card className="hover:shadow-[0_8px_32px_-6px_hsl(25_70%_47%/0.12)] transition-shadow duration-500 overflow-hidden rounded-[18px]">
             <div className="h-2 bg-accent" />
             <CardContent className="p-10 md:p-12 flex flex-col h-full">
               <div className="flex-1">
@@ -98,7 +98,7 @@ const Discounts = () => {
           </Card>
 
           {/* Offer 2 */}
-          <Card className="border-primary/30 hover:shadow-[0_8px_32px_-6px_hsl(25_70%_47%/0.12)] transition-shadow duration-500 overflow-hidden rounded-[18px]">
+          <Card className="hover:shadow-[0_8px_32px_-6px_hsl(25_70%_47%/0.12)] transition-shadow duration-500 overflow-hidden rounded-[18px]">
             <div className="h-2 bg-primary" />
             <CardContent className="p-10 md:p-12 flex flex-col h-full">
               <div className="flex-1">
