@@ -8,19 +8,19 @@ const ServicesPreview = () => {
     {
       titleKey: "services.box1.title",
       descKey: "services.box1.desc",
-      price: "75 €",
+      price: "990 Kč",
       bgClass: "bg-secondary/50",
     },
     {
       titleKey: "services.box2.title",
       descKey: "services.box2.desc",
-      price: "100 €",
+      price: "1 390 Kč",
       bgClass: "bg-secondary/70",
     },
     {
       titleKey: "services.box3.title",
       descKey: "services.box3.desc",
-      price: "130 €",
+      price: "1 790 Kč",
       bgClass: "bg-[hsl(30_25%_88%)]",
     },
   ];
