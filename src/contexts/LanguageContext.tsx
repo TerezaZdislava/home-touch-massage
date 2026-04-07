@@ -220,19 +220,34 @@ const translations: Record<string, Record<Lang, string>> = {
   "social.google": { cz: "Google recenze", en: "Google Reviews" },
 
   // Footer
-  "footer.brand": { cz: "Mobilní masáže", en: "Mobile Massage" },
+  //"footer.brand": { cz: "Mobilní masáže", en: "Mobile Massage" },
+  //"footer.brandDesc": {
+    //cz: "Dopřejte si prvotřídní péči bez nutnosti kamkoliv cestovat. Přináším relaxaci přímo do vašeho obývacího pokoje, abyste si mohli odpočinek vychutnat v maximálním pohodlí.",
+    //en: "Treat yourself to first-class care without having to travel anywhere. I bring relaxation directly to your living room so you can enjoy rest in maximum comfort.",
+  //},
+  //"footer.links": { cz: "Odkazy", en: "Links" },
+  //"footer.contact": { cz: "Kontakt", en: "Contact" },
+  //"footer.hours": { cz: "Pracovní doba", en: "Working Hours" },
+  //"footer.monSat": { cz: "Pondělí - sobota", en: "Monday - Saturday" },
+  //"footer.sun": { cz: "Neděle", en: "Sunday" },
+  //"footer.copyright": {
+    //cz: "Mobilní masáže. Všechna práva vyhrazena. Profesionální masérské služby.",
+    //en: "Mobile Massage. All rights reserved. Professional massage services.",
+  //},
+
+  "footer.brand": { cz: "Web under construction", en: "Web under construction" },
   "footer.brandDesc": {
-    cz: "Dopřejte si prvotřídní péči bez nutnosti kamkoliv cestovat. Přináším relaxaci přímo do vašeho obývacího pokoje, abyste si mohli odpočinek vychutnat v maximálním pohodlí.",
-    en: "Treat yourself to first-class care without having to travel anywhere. I bring relaxation directly to your living room so you can enjoy rest in maximum comfort.",
+    cz: "",
+    en: "",
   },
-  "footer.links": { cz: "Odkazy", en: "Links" },
-  "footer.contact": { cz: "Kontakt", en: "Contact" },
-  "footer.hours": { cz: "Pracovní doba", en: "Working Hours" },
-  "footer.monSat": { cz: "Pondělí - sobota", en: "Monday - Saturday" },
-  "footer.sun": { cz: "Neděle", en: "Sunday" },
+  "footer.links": { cz: "", en: "" },
+  "footer.contact": { cz: "", en: "" },
+  "footer.hours": { cz: "", en: "" },
+  "footer.monSat": { cz: "", en: "" },
+  "footer.sun": { cz: "", en: "" },
   "footer.copyright": {
-    cz: "Mobilní masáže. Všechna práva vyhrazena. Profesionální masérské služby.",
-    en: "Mobile Massage. All rights reserved. Professional massage services.",
+    cz: "",
+    en: "",
   },
 };
 
