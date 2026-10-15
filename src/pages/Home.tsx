@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import ServicesPreview from "@/components/ServicesPreview";
 import About from "@/components/About";
+import Background from "@/components/Background";
 import Discounts from "@/components/Discounts";
 import Reservation from "@/components/Reservation";
 import SocialConnect from "@/components/SocialConnect";
@@ -14,6 +15,7 @@ const Home = () => {
       <main className="flex-1">
         <Hero />
         <About />
+        <Background />
         <ServicesPreview />
         <Discounts />
         <Reservation />

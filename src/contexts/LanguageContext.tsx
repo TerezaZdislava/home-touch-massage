@@ -82,6 +82,40 @@ const translations: Record<string, Record<Lang, string>> = {
     en: "\u201CRecovery is not an escape from performance. It is its prerequisite.\u201D",
   },
 
+  // Background
+  "bg.title": { cz: "Co mám za sebou", en: "My Background" },
+  "bg.subtitle": { cz: "Vzdělání & certifikace", en: "Education & Professional Development" },
+  "bg.i1.title": { cz: "Odborná kvalifikace – masér", en: "Professional Massage Qualification" },
+  "bg.i1.desc": {
+    cz: "Osvědčení o odborné způsobilosti k výkonu zdravotnického povolání v oboru Masér, Ministerstvo zdravotnictví ČR, 2014. Absolvováno v Centru rekvalifikačního vzdělávání RAFAEL v Karlových Varech.",
+    en: "Certificate of professional competence for the healthcare profession of massage therapist, issued by the Czech Ministry of Health in 2014. Training completed at the RAFAEL Vocational Retraining Education Centre in Karlovy Vary, Czech Republic.",
+  },
+  "bg.i2.title": { cz: "Rozšiřování masérských technik", en: "Expanding My Massage Techniques" },
+  "bg.i2.desc": {
+    cz: "V roce 2026 jsem prakticky rozšířil své dovednosti o základy thajské a havajské masáže. Jedná se o praktické rozšíření technik, nikoli o formální certifikaci.",
+    en: "In 2026, I expanded my practical skills to include the fundamentals of Thai and Hawaiian massage. This represents practical skills development, not a formal certification.",
+  },
+  "bg.i3.title": { cz: "Zkušenosti z pivních lázní", en: "Experience in Beer Spa Wellness" },
+  "bg.i3.desc": {
+    cz: "Praktická zkušenost s masážemi a péčí o klienty v prostředí pivních lázní.",
+    en: "Practical experience with massage and client care in a beer spa environment.",
+  },
+  "bg.i4.title": { cz: "Zkušenost z Islandu", en: "Experience in Iceland" },
+  "bg.i4.desc": {
+    cz: "Zkušenost z Modré laguny na Islandu, známé svým unikátním prostředím a wellness atmosférou.",
+    en: "Experience at the Blue Lagoon in Iceland, known for its distinctive setting and wellness atmosphere.",
+  },
+  "bg.i5.title": { cz: "Vlastní anatomický a klinický atlas", en: "My Own Anatomy and Clinical Reference Atlas" },
+  "bg.i5.desc": {
+    cz: "Vytvářím a rozvíjím vlastní odborné materiály, které zahrnují svalové karty, pohybové testy a pracovní protokoly.",
+    en: "I develop my own professional reference materials, including muscle reference cards, movement tests, and working protocols.",
+  },
+  "bg.i6.title": { cz: "Průběžné vzdělávání", en: "Continuous Learning" },
+  "bg.i6.desc": {
+    cz: "Průběžně studuji anatomii a pohybové vzorce, abych dále rozvíjel své znalosti a lépe rozuměl lidskému tělu a pohybu.",
+    en: "I continue to study anatomy and movement patterns to deepen my knowledge and understanding of the human body and movement.",
+  },
+
   // Services
   "services.title": { cz: "Masáž na míru", en: "Tailored Massage" },
   "services.subtitle": {
