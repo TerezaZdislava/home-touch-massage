@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, FileUser } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import logoSvg from "@/assets/logo.svg";
 
@@ -55,20 +55,26 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">{t("footer.contact")}</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
+                <FileUser className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <a href="tel:+31642940546" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  +420 720 634 900
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <a href="tel:+31642940546" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  +31 6 4294 0546
+                  +420 720 634 900
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@mobilemassage.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  info@mobilemassage.com
+                <a href="mailto:elsol.masaze@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  elsol.masaze@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">Rotterdam & omgeving</span>
+                <span className="text-sm text-muted-foreground">Služby poskytovány v Praze a okolí</span>
               </li>
             </ul>
           </div>

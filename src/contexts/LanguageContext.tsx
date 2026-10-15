@@ -15,16 +15,16 @@ const translations: Record<string, Record<Lang, string>> = {
   "nav.reservation": { cz: "Rezervace", en: "Reservation" },
   "nav.contact": { cz: "Kontakt", en: "Contact" },
   "nav.bookNow": { cz: "Rezervovat nyní", en: "Book Now" },
-  "nav.brand": { cz: "Mobilní masáže", en: "Mobile Massage" },
+  "nav.brand": { cz: "El Sol Massages", en: "El Sol Massages" },
 
   // Hero
-  "hero.title": { cz: "Masáže pro funkční a vyvážené tělo", en: "Massage for a Functional and Balanced Body" },
-  "hero.subtitle": { cz: "Úleva, regenerace a návrat do pohybu – přímo u Vás doma", en: "Relief, recovery and return to movement – right at your doorstep" },
+  "hero.title": { cz: "Každé tělo je jiné. Masáž by měla být taky.", en: "Every body is different. Massage should be too." },
+  "hero.subtitle": { cz: "Mobilní a firemní masáže v Praze. Vnímám, co tělo potřebuje, a hledám souvislosti mezi pohybem, zatížením a potížemi.", en: "Mobile and corporate massages in Prague. I perceive what the body needs and look for connections between movement, load and problems." },
   "hero.val1": { cz: "Přijedu za vámi", en: "I come to you" },
-  "hero.val2": { cz: "Vlastní vybavení", en: "Own equipment" },
+  "hero.val2": { cz: "Firemní masáže", en: "Corporate massages" },
   "hero.val3": { cz: "Individuální přístup", en: "Individual approach" },
   "hero.cta1": { cz: "Rezervovat masáž", en: "Book a Massage" },
-  "hero.cta2": { cz: "Všechny služby", en: "All Services" },
+  "hero.cta2": { cz: "Nabídka pro firmy", en: "Corporate Offer" },
 
   // About - Section 1
   "about.howIWork": { cz: "Jak pracuji", en: "How I Work" },
@@ -50,7 +50,7 @@ const translations: Record<string, Record<Lang, string>> = {
   "about.bookMassage": { cz: "Objednat masáž", en: "Book a Massage" },
 
   // About - Section 3
-  "about.aboutMe": { cz: "O mně", en: "About Me" },
+  "about.aboutMe": { cz: "Cesta k El Sol", en: "The Journey to El Sol" },
   "about.aboutP1": {
     cz: "Vycházím z praxe v salonech a lázních i ze zkušeností s různými typy těl a zátěží. Masáž vnímám jako nástroj, který pomáhá tělu znovu fungovat lehčeji, volněji a s menším napětím.",
     en: "I draw from experience in salons and spas and from working with various body types and loads. I see massage as a tool that helps the body function more easily, freely and with less tension.",
@@ -61,33 +61,22 @@ const translations: Record<string, Record<Lang, string>> = {
   },
   "about.readStory": { cz: "👉 Přečíst celý příběh cesty El Sol", en: "👉 Read the full El Sol journey" },
   "about.storyP1": {
-    cz: "Od dětství mě fascinovalo, co všechno lidské tělo dokáže – jeho síla, adaptabilita, odolnost i schopnost precizně reagovat na dotyk, dech či pohyb. Pozoroval jsem lidi kolem sebe: sportovce, tanečníky, jogíny i bojovníky. Zajímal mě jejich skrytý potenciál i to, jakým způsobem propojují tělo s myslí. Postupně jsem začal vnímat lidskou schránku jako dar, který si zaslouží hlubokou péči, údržbu a neutuchající respekt.",
-    en: "Since childhood, I've been fascinated by what the human body can do – its strength, adaptability, resilience and ability to respond precisely to touch, breath and movement. I observed people around me: athletes, dancers, yogis and fighters. I was interested in their hidden potential and how they connect body with mind. Gradually, I began to perceive the human body as a gift that deserves deep care, maintenance and unwavering respect.",
+    cz: "Lidské tělo mě fascinuje od dětství. Koukal jsem na sportovce, tanečníky, jogíny i bojovníky a chtěl jsem vědět, co všechno dokážou. Věnoval jsem se breakdance, akrobacii a kung-fu. Mistrem jsem nebyl, ale vyzkoušel jsem různé způsoby, jak tělo používat a rozvíjet. A hlavně jsem zjistil, že čím lépe regeneruje, tím víc se můžu hýbat. To mě přivedlo k masážím a kolem dvaceti jsem absolvoval první masérský kurz. Bylo mi jasné, že tohle chci dělat.",
+    en: "I've been fascinated by the human body since childhood. I watched athletes, dancers, yogis and fighters and wanted to know what they could do. I practiced breakdancing, acrobatics and kung fu. I wasn't a master, but I tried different ways to use and develop the body. And most importantly, I realized that the better it regenerates, the more I can move. This led me to massages and around the age of twenty I completed my first massage course. It was clear to me that this is what I wanted to do.", 
   },
   "about.storyP2": {
-    cz: "V mládí jsem prozkoumával nejrůznější formy pohybu a cvičení, čímž jsem přirozeně objevoval i svět masáží a strečinku. Intuitivně jsem začal uvolňovat svalové napětí sobě i ostatním. Pozitivní ohlasy okolí mě utvrdily v tom, že mám pro dotyk přirozený cit. To mě ve dvaceti letech přivedlo k prvnímu masérskému kurzu, kde jsem poprvé pocítil, že tato cesta se mnou skutečně rezonuje.",
-    en: "In my youth, I explored various forms of movement and exercise, naturally discovering the world of massage and stretching. Intuitively, I began releasing muscle tension for myself and others. Positive feedback confirmed my natural sense of touch. At twenty, this led me to my first massage course, where I first felt this path truly resonated with me.",
-  },
+    cz: "První praxi jsem získal v pivních lázních, kde jsem hostům po koupeli dělal dvacetiminutové masáže. Naučil jsem se pracovat s lidmi různého věku, postavy i životního stylu a poznal jsem, jak funguje wellness provoz.",
+    en: "I gained my first practice in beer spas, where I gave guests twenty-minute massages after their bath. I learned to work with people of different ages, body types and lifestyles, and I got to know how a wellness operation works.",  
+},
   "about.storyP3": {
-    cz: "Moje první zásadní profesní zkušenost přišla v pivních lázních. Tam jsem se učil pracovat s rozmanitými typy postav, různými stupni únavy i specifickými blokádami. Získal jsem zde potřebnou jistotu, rytmus a schopnost naslouchat potřebám klienta.",
-    en: "My first significant professional experience came at beer spas. There I learned to work with diverse body types, varying levels of fatigue and specific blockages. I gained the necessary confidence, rhythm and ability to listen to the client's needs.",
+    cz: "Pak mě cesta zavedla na Island do Modré laguny, kde jsem při masážích ve vodě rozvíjel cit pro dotek a vnímání těla. Později mi spolupráce s lektorkou tradiční čínské medicíny otevřela pohled na energetiku těla.",
+    en: "Then my journey took me to Iceland to the Blue Lagoon, where I developed a sense of touch and body awareness through massages in the water. Later, collaboration with a traditional Chinese medicine instructor opened my view on the body's energy.",
   },
   "about.storyP4": {
-    cz: "Následně mě život zavedl na Island – do proslulé Modré laguny. Práce v tomto unikátním prostředí mě seznámila s úplně jinou dimenzí péče. Vodní masáže mě naučily ještě větší citlivosti, vnitřnímu klidu a preciznosti.",
-    en: "Life then took me to Iceland – to the famous Blue Lagoon. Working in this unique environment introduced me to a completely different dimension of care. Water massages taught me even greater sensitivity, inner calm and precision.",
+    cz: "Dnes všechno spojuju v El Sol, kde hledám, odkud tělu vzniká napětí, a pomáhám mu se uvolnit.",
+    en: "Today I combine everything in El Sol, where I look for the source of tension in the body and help it relax.",
   },
-  "about.storyP5": {
-    cz: "Cennou zkušeností byla také spolupráce s lektorkou tradiční čínské medicíny, která mě posunula k hlubšímu porozumění energetice těla.",
-    en: "Valuable experience also came from collaboration with a traditional Chinese medicine instructor, which deepened my understanding of the body's energy.",
-  },
-  "about.storyP6": {
-    cz: "Lidé se ke mně začali vracet a jejich zpětná vazba mě utvrdila v tom, že masáž není jen služba, ale rituál, který navrací tělu lehkost a funkčnost.",
-    en: "People started coming back, and their feedback confirmed that massage is not just a service, but a ritual that restores lightness and function to the body.",
-  },
-  "about.storyP7": {
-    cz: "Dnes všechny tyto zkušenosti propojuji ve vlastní praxi El Sol. Ta vychází z principů jednoduchosti, plné pozornosti a respektu k individuálním potřebám každého těla. Masáž vnímám jako harmonickou kombinaci techniky, vjemu a intuice. Mým cílem je, aby uvolněné tělo přineslo hluboký klid i vaší mysli.",
-    en: "Today I combine all these experiences in my own practice El Sol. It is based on principles of simplicity, full attention and respect for the individual needs of each body. I see massage as a harmonious combination of technique, sensation and intuition. My goal is for a relaxed body to bring deep calm to your mind as well.",
-  },
+  
   "about.quote": {
     cz: "\u201ERegenerace nen\u00ED \u00FAnik od v\u00FDkonu. Je jeho p\u0159edpokladem.\u201C",
     en: "\u201CRecovery is not an escape from performance. It is its prerequisite.\u201D",

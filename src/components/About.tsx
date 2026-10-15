@@ -115,9 +115,6 @@ const About = () => {
                     <p>{t("about.storyP2")}</p>
                     <p>{t("about.storyP3")}</p>
                     <p>{t("about.storyP4")}</p>
-                    <p>{t("about.storyP5")}</p>
-                    <p>{t("about.storyP6")}</p>
-                    <p>{t("about.storyP7")}</p>
                   </div>
                 </div>
               </div>
