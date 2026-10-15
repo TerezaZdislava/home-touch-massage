@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, FileUser } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, FileUser, House } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import logoSvg from "@/assets/logo.svg";
 
@@ -56,13 +56,19 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <FileUser className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <a href="tel:+31642940546" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  +420 720 634 900
+                <a className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  IČO 02931621
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <House className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <a className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Revoluční 504, 357 34 Nové Sedlo (OSVČ)
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <a href="tel:+31642940546" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href="tel:+420720634900" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   +420 720 634 900
                 </a>
               </li>
